@@ -1808,11 +1808,8 @@ legend {
     overflow: hidden;
     padding: 100px 0;
   }
-  .sec-curri .container {
-    width: 100%;
-  }
   .sec-curri .cont-curriculum {
-    width: calc(100% - 40px);
+    width: 90%;
     margin: 37px auto 0;
   }
   .sec-curri .cont-curriculum::before, .sec-curri .cont-curriculum::after {
@@ -2091,6 +2088,9 @@ legend {
 @media screen and (max-width: 800px) {
   .sec-review {
     padding: 60px 0 90px;
+  }
+  .sec-review .slider-review {
+    width: 90%;
   }
   .sec-review .slider-review .swiper-slide {
     padding: 48px 30px;

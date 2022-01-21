@@ -938,11 +938,11 @@
     .sec-curri {
         overflow: hidden;
         padding: 100px 0;
-        .container {
-            width: 100%;
-        }
+        // .container {
+        //     width: 100%;
+        // }
         .cont-curriculum {
-            width: calc(100% - 40px);
+            width: 90%;
             margin: 37px auto 0;
             // padding-bottom: 100px;
             &::before,
@@ -1190,6 +1190,7 @@
     .sec-review {
         padding: 60px 0 90px;
         .slider-review {
+            width: 90%;
             .swiper-slide {
                 padding: 48px 30px;
             }
