@@ -717,14 +717,14 @@ legend {
 }
 
 .mVisual .swiper-slide .btn-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-top: 40px;
 }
 
 .mVisual .swiper-slide .btn-blue {
-  display: block;
+  display: inline-block;
   height: 3.1em;
   margin-right: 8px;
   padding: 0 2.2em;
@@ -1572,7 +1572,8 @@ legend {
     position: relative;
   }
   .sec-onestop .lst-onestop {
-    margin-top: 87px;
+    margin-top: 0;
+    padding-top: 87px;
   }
   .sec-onestop .lst-onestop li {
     max-width: none;

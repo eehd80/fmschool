@@ -62,11 +62,11 @@
             }
         }
         .btn-area {
-            display: flex;
+            display: inline-flex;
             margin-top: 40px;
         }
         .btn-blue {
-            display: block;
+            display: inline-block;
             height: 3.1em;
             margin-right: 8px;
             padding: 0 2.2em;
@@ -747,7 +747,8 @@
             position: relative;
         }
         .lst-onestop {
-            margin-top: 87px;
+            margin-top: 0;
+            padding-top: 87px;
             li {
                 max-width: none;
                 &::before {
