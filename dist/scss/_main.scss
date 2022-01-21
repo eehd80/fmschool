@@ -496,6 +496,7 @@
             right: 0;
             width: 49%;
             img {
+                display: block;
                 width: 100%;
             }
         }
@@ -707,7 +708,7 @@
     .sec-onestop {
         .lst-onestop li::before {
             transform: scale(0.6);
-            right: -32%;
+            right: -20%;
         }
     }
 }

@@ -612,7 +612,7 @@ legend {
     display: none;
   }
   .swiper .swiper-pagination-progressbar {
-    width: 100%;
+    width: 138%;
     margin-top: 30px;
   }
 }
@@ -1238,6 +1238,7 @@ legend {
 }
 
 .sec-expert .cont-expert .img-sin img {
+  display: block;
   width: 100%;
 }
 
@@ -1519,7 +1520,7 @@ legend {
   .sec-onestop .lst-onestop li::before {
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
-    right: -32%;
+    right: -20%;
   }
 }
 
