@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* 나눔바른고딕 */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
 @font-face {
   font-family: "NanumBarunGothic";
   src: url(../fonts/NanumBarunGothicLight.woff);
@@ -214,7 +213,7 @@ select,
 textarea,
 button {
   font-size: 14px;
-  font-family: "NanumSquare", "Malgun Gothic", "맑은 고딕", sans-serif;
+  font-family: "NanumBarunGothic", "Malgun Gothic", "맑은 고딕", sans-serif;
   font-weight: 400;
   line-height: 1.5;
   color: #000;
@@ -2462,98 +2461,6 @@ legend {
   margin: 0 13px 0 0;
   background: url(../../images/comm/ico-down.svg) 0 0/contain no-repeat;
   vertical-align: middle;
-}
-
-/* 나눔바른고딕 */
-@font-face {
-  font-family: "NanumBarunGothic";
-  src: url(../fonts/NanumBarunGothicLight.woff);
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "NanumBarunGothic";
-  src: url(../fonts/NanumBarunGothic.woff);
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "NanumBarunGothic";
-  src: url(../fonts/NanumBarunGothicBold.woff);
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Cafe24Ohsquare";
-  src: url(../fonts/Cafe24Ohsquare.woff);
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "S-CoreDream3";
-  src: url(../fonts/SCDream3.woff);
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "S-CoreDream4";
-  src: url(../fonts/SCDream4.woff);
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "S-CoreDream5";
-  src: url(../fonts/SCDream5.woff);
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "S-CoreDream6";
-  src: url(../fonts/SCDream6.woff);
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "S-CoreDream7";
-  src: url(../fonts/SCDream7.woff);
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "oneMobileTitle";
-  src: url(../fonts/ONE-Mobile-Title.woff);
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "NanumSquare";
-  src: url(../fonts/NanumSquareL.woff);
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "NanumSquare";
-  src: url(../fonts/NanumSquareR.woff);
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "NanumSquare";
-  src: url(../fonts/NanumSquareB.woff);
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "NanumSquare";
-  src: url(../fonts/NanumSquareEB.woff);
-  font-weight: 800;
 }
 
 .main-contents {

@@ -1,3 +1,5 @@
+@import "font";
+
 /* reset */
 body,
 div,
@@ -135,7 +137,7 @@ select,
 textarea,
 button {
     font-size: 14px;
-    font-family: "NanumSquare", "Malgun Gothic", "맑은 고딕", sans-serif;
+    font-family: "NanumBarunGothic", "Malgun Gothic", "맑은 고딕", sans-serif;
     font-weight: 400;
     line-height: 1.5;
     color: #000;
