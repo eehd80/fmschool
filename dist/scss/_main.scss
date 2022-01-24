@@ -356,14 +356,23 @@
                 font-size: 1em;
             }
         }
-        .lst-class .link-txt {
-            padding: 12px 0 0;
-            border: none;
-            .tit {
-                font-size: 1em;
+        .lst-class {
+            .link-thumb::before {
+                bottom: 5px;
+                right: 5px;
+                width: 25px;
+                height: 25px;
+                background: url(../../images/comm/ico-play.png) 0 0 no-repeat;
             }
-            .txt {
-                font-size: 0.9em;
+            .link-txt {
+                padding: 12px 0 0;
+                border: none;
+                .tit {
+                    font-size: 1.1em;
+                }
+                .txt {
+                    font-size: 1em;
+                }
             }
         }
         .scroll-verti {
@@ -420,14 +429,6 @@
                 padding: 12px 0;
             }
         }
-        // .lst-class-type2 {
-        //     .link-thumb {
-        //         &::before {
-        //             width: 30px;
-        //             height: 30px;
-        //         }
-        //     }
-        // }
     }
 }
 
