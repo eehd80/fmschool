@@ -34,8 +34,9 @@
         .tit {
             display: block;
             margin-top: 20px;
-            font-size: 4.429em;
             @include ff-onemobile;
+            font-size: 4.429em;
+            font-weight: normal;
             line-height: 1.3;
         }
         .txt {
@@ -671,6 +672,7 @@
             display: block;
             font-size: 2.364em;
             font-family: "oneMobileTitle";
+            font-weight: normal;
         }
         img {
             display: block;
@@ -827,11 +829,11 @@
                 flex-direction: column;
                 width: 83%;
             }
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
+            // img {
+            //     width: 100%;
+            //     height: 100%;
+            //     object-fit: contain;
+            // }
         }
         .swiper-slide {
             padding-top: 20px;
