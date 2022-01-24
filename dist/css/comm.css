@@ -1084,7 +1084,10 @@ legend {
     border: none;
   }
   .sec-class .lst-class .link-txt .tit {
-    font-size: 1.1em;
+    font-size: 1em;
+  }
+  .sec-class .lst-class .link-txt .txt {
+    font-size: 0.9em;
   }
   .sec-class .scroll-verti {
     margin-top: 5px;
@@ -1130,7 +1133,6 @@ legend {
     position: absolute;
     bottom: 0;
     left: 15px;
-    font-size: 1em;
   }
   .sec-class .scroll-hori {
     overflow-x: auto;

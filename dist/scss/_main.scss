@@ -360,7 +360,10 @@
             padding: 12px 0 0;
             border: none;
             .tit {
-                font-size: 1.1em;
+                font-size: 1em;
+            }
+            .txt {
+                font-size: 0.9em;
             }
         }
         .scroll-verti {
@@ -392,7 +395,6 @@
                     position: absolute;
                     bottom: 0;
                     left: 15px;
-                    font-size: 1em;
                 }
             }
         }
