@@ -836,7 +836,7 @@
             // }
         }
         .swiper-slide {
-            padding-top: 20px;
+            padding-top: 10px;
         }
         .swiper-pagination {
             position: absolute;
@@ -936,7 +936,6 @@
 @media screen and (max-width: 1280px) {
     .sec-curri {
         overflow: hidden;
-        padding: 100px 0;
         // .container {
         //     width: 100%;
         // }
@@ -975,33 +974,32 @@
                 width: 100%;
             }
             .swiper-pagination {
-                display: inline-flex;
+                display: flex;
                 flex-direction: row;
-                justify-content: flex-start;
-                flex-wrap: wrap;
+                justify-content: center;
                 position: static;
                 width: 100%;
                 height: auto;
                 border-top: none;
             }
             .swiper-pagination-bullet {
+                display: block;
                 flex-grow: 0;
-                width: auto;
-                height: 40px;
-                margin: 0 5px 5px 0;
-                padding: 2px 3% 0;
-                border: 1px solid $lineCont1;
-                border-radius: 40px;
-                background-color: $w;
-                color: $subFont;
-                font-size: 1em;
+                width: 12px;
+                height: 12px;
+                margin: 0 5px 5px;
+                padding: 0;
+                border-radius: 50%;
+                background-color: $b;
+                opacity: 0.2;
                 &::before {
-                    white-space: nowrap;
+                    display: none;
                 }
             }
             .swiper-pagination-bullet-active {
                 background-color: $prim1;
                 border: 1px solid $prim1;
+                opacity: 1;
                 &::before {
                     color: $w;
                 }
@@ -1013,7 +1011,7 @@
                 overflow: hidden;
                 display: flex;
                 flex-direction: column;
-                height: 100%;
+                height: 415px;
                 border-radius: 10px;
                 box-shadow: 20px 20px 36px 0 rgba($b, 0.12);
                 border: solid 3px #0baac2;
@@ -1102,13 +1100,21 @@
     }
 }
 @media screen and (max-width: 800px) {
-    .sec-curri .cont-curriculum .slider-curri {
-        padding-top: 100px;
+    .sec-curri {
+        .cont-curriculum {
+            .slider-curri {
+                padding-top: 52px;
+            }
+            .box-curri {
+                .num {
+                    top: 5px;
+                }
+                .cont {
+                    padding: 70px 10% 25px;
+                }
+            }
+        }
     }
-    // .sec-curri {
-    //     overflow: hidden;
-    //     padding: 36px 0 60px;
-    // }
 }
 
 .sec-review {
@@ -1202,6 +1208,10 @@
             .tit {
                 margin-top: 30px;
                 font-size: 1.6em;
+            }
+            .txt {
+                height: 7.2em;
+                line-height: 1.8em;
             }
         }
     }
@@ -1333,10 +1343,11 @@
             width: 72%;
             margin: 0;
             .swiper-slide {
+                height: 478px;
                 padding: 0;
                 @include thumbLine;
                 .txt-area {
-                    padding: 0 25px 25px;
+                    padding: 0 10% 25px;
                 }
             }
             .spe {
@@ -1347,7 +1358,13 @@
             }
             .group {
                 margin-top: 16px;
-                font-size: 1.1em;
+                @include ell;
+            }
+            .swiper-pagination {
+                width: 138%;
+            }
+            .link-more {
+                right: -40%;
             }
         }
     }
@@ -1411,7 +1428,6 @@
             padding: 0 60px 0 85px;
             font-size: 0.929em;
             color: #6f6f6f;
-            line-height: 2;
             border-top: 1px solid rgba($lineCont1, 0);
             transition: all 0.5s;
         }
