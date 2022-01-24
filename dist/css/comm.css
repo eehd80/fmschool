@@ -1423,8 +1423,8 @@ legend {
 }
 
 .sec-onestop .lst-onestop .slide {
-  -webkit-animation: ani-onestop 0.7s forwards;
-          animation: ani-onestop 0.7s forwards;
+  -webkit-animation: ani-onestop 0.5s forwards;
+          animation: ani-onestop 0.5s forwards;
 }
 
 .sec-onestop .lst-onestop li {
@@ -1435,13 +1435,13 @@ legend {
 }
 
 .sec-onestop .lst-onestop li:nth-child(2) {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+  -webkit-animation-delay: 0.65s;
+          animation-delay: 0.65s;
 }
 
 .sec-onestop .lst-onestop li:last-child {
-  -webkit-animation-delay: 1.4s;
-          animation-delay: 1.4s;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
 }
 
 .sec-onestop .lst-onestop li:last-child::before {
@@ -1769,9 +1769,9 @@ legend {
           transform: translateX(-50%);
   bottom: 20px;
   z-index: 30;
-  -webkit-transform: translateX(-57.4%);
-          transform: translateX(-57.4%);
-  width: 53%;
+  -webkit-transform: translateX(-59.4%);
+          transform: translateX(-59.4%);
+  width: 53.7%;
   padding: 15px 0px 11px;
   border-radius: 4px;
   background-color: #00a9bd;
@@ -2480,6 +2480,11 @@ legend {
   position: relative;
   margin-bottom: 200px;
   padding-left: 75px;
+}
+
+.main-contents * {
+  font-family: "NanumBarunGothic", serif;
+  font-weight: 400;
 }
 
 .main-contents .contents-area > .container {

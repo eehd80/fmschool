@@ -633,7 +633,7 @@
         justify-content: space-between;
         margin-top: 65px;
         .slide {
-            animation: ani-onestop 0.7s forwards;
+            animation: ani-onestop 0.5s forwards;
         }
         li {
             position: relative;
@@ -641,10 +641,10 @@
             max-width: 290px;
             opacity: 0;
             &:nth-child(2) {
-                animation-delay: 0.7s;
+                animation-delay: 0.65s;
             }
             &:last-child {
-                animation-delay: 1.4s;
+                animation-delay: 1.3s;
                 &::before {
                     display: none;
                 }
@@ -906,8 +906,8 @@
             @include posX;
             bottom: 20px;
             z-index: 30;
-            transform: translateX(-57.4%);
-            width: 53%;
+            transform: translateX(-59.4%);
+            width: 53.7%;
             padding: 15px 0px 11px;
             border-radius: 4px;
             background-color: $prim1;
