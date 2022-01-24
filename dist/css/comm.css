@@ -2465,6 +2465,11 @@ legend {
   padding-left: 75px;
 }
 
+.main-contents * {
+  font-family: "NanumBarunGothic", serif;
+  font-weight: 400;
+}
+
 .main-contents .contents-area > .container {
   padding: 60px 0 100px;
 }
