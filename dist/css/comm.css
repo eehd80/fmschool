@@ -501,7 +501,7 @@ legend {
 
 @media screen and (max-width: 800px) {
   .link-more {
-    top: -49px;
+    top: -46px;
     font-size: 1em;
   }
 }
@@ -1977,7 +1977,10 @@ legend {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 445px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 440px;
     border-radius: 10px;
     -webkit-box-shadow: 20px 20px 36px 0 rgba(0, 0, 0, 0.12);
             box-shadow: 20px 20px 36px 0 rgba(0, 0, 0, 0.12);
@@ -1986,6 +1989,9 @@ legend {
     letter-spacing: -0.12em;
   }
   .sec-curri .cont-curriculum .box-curri .cont {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     min-height: 315px;
     padding: 25px 10% 25px 80px;
   }
@@ -2018,10 +2024,7 @@ legend {
     color: #777;
   }
   .sec-curri .cont-curriculum .box-curri .foot {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    padding: 20px 5% 10px;
+    padding: 20px 5% 7px;
     border-top: 1px solid #eaeaea;
     background-color: #f9f9fa;
   }
@@ -2091,12 +2094,13 @@ legend {
     padding-top: 52px;
   }
   .sec-curri .cont-curriculum .box-curri .num {
-    top: 5px;
+    top: 0;
   }
   .sec-curri .cont-curriculum .box-curri .cont {
-    padding: 70px 10% 25px;
+    padding: 65px 10% 25px;
   }
   .sec-curri .cont-curriculum .box-curri .txt {
+    margin-top: 5px;
     font-size: 1.071em;
     line-height: 1.8em;
   }

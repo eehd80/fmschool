@@ -1075,13 +1075,15 @@
                 overflow: hidden;
                 display: flex;
                 flex-direction: column;
-                height: 445px;
+                justify-content: space-between;
+                height: 440px;
                 border-radius: 10px;
                 box-shadow: 20px 20px 36px 0 rgba($b, 0.12);
                 border: solid 3px #0baac2;
                 background-color: #fff;
                 letter-spacing: -0.12em;
                 .cont {
+                    flex-grow: 1;
                     min-height: 315px;
                     padding: 25px 10% 25px 80px;
                 }
@@ -1114,8 +1116,7 @@
                     color: $subFont;
                 }
                 .foot {
-                    flex-grow: 1;
-                    padding: 20px 5% 10px;
+                    padding: 20px 5% 7px;
                     border-top: 1px solid #eaeaea;
                     background-color: #f9f9fa;
                 }
@@ -1180,12 +1181,13 @@
             }
             .box-curri {
                 .num {
-                    top: 5px;
+                    top: 0;
                 }
                 .cont {
-                    padding: 70px 10% 25px;
+                    padding: 65px 10% 25px;
                 }
                 .txt {
+                    margin-top: 5px;
                     font-size: 1.071em;
                     line-height: 1.8em;
                 }
