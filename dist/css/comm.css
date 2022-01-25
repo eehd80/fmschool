@@ -285,14 +285,16 @@ legend {
 /* 나눔바른고딕 */
 @font-face {
   font-family: "NanumBarunGothic";
-  src: url(../fonts/NanumBarunGothicLight.woff);
-  font-weight: 300;
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "NanumBarunGothic";
-  src: url(../fonts/NanumBarunGothic.woff);
-  font-weight: 400;
+  src: url(../fonts/NanumBarunGothicLight.woff);
+  font-weight: 300;
 }
 
 @font-face {
@@ -936,7 +938,7 @@ legend {
   padding: 0 12px;
   line-height: 26px;
   color: #777;
-  font-size: 0.786em;
+  font-size: 0.857em;
 }
 
 .sec-class .sec-cont {
@@ -1002,7 +1004,7 @@ legend {
   height: 22px;
   background-color: #ea2743;
   color: #fff;
-  font-size: 0.786em;
+  font-size: 0.857em;
   text-align: center;
   line-height: 22px;
 }
@@ -1021,7 +1023,7 @@ legend {
   padding: 3px 3px 1px;
   border-radius: 2px;
   border: 1px solid #8b8b8b;
-  font-size: 0.786em;
+  font-size: 0.857em;
   line-height: 1;
   opacity: 0.7;
 }
@@ -1041,7 +1043,7 @@ legend {
 
 .sec-class .lst-class .link-txt .writer {
   display: block;
-  font-size: 0.786em;
+  font-size: 0.857em;
   color: #8b8b8b;
 }
 
