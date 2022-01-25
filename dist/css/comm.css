@@ -1458,6 +1458,7 @@ legend {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 99%;
   font-size: 3.143em;
   color: #42f7fe;
 }
