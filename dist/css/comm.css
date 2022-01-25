@@ -399,7 +399,7 @@ legend {
 
 .sec-tit {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-size: 1.5em;
   font-weight: 700;
 }
@@ -416,19 +416,24 @@ legend {
   .sec- {
     padding: 60px 0;
   }
+  .sec-tit {
+    line-height: 1.3;
+  }
 }
 
 .tit-area .tit {
   font-size: 3.143em;
   text-align: center;
   font-weight: 400;
+  line-height: 1.32;
 }
 
 .tit-area .txt {
-  margin-top: 10px;
+  margin-top: 14px;
   font-size: 1.143em;
   color: #777;
   text-align: center;
+  line-height: 1.7;
 }
 
 @media screen and (max-width: 1280px) {
@@ -442,7 +447,7 @@ legend {
 
 @media screen and (max-width: 800px) {
   .tit-area .tit {
-    font-size: 1.6em;
+    font-size: 6.3vw;
   }
   .tit-area .txt {
     font-size: 1em;
@@ -481,6 +486,7 @@ legend {
   position: absolute;
   top: -35px;
   right: 0;
+  z-index: 100;
   font-size: 0.857em;
   color: #777;
 }
@@ -488,9 +494,16 @@ legend {
 .link-more::after {
   content: "\f105";
   display: inline-block;
-  margin-left: 5px;
+  margin-left: 3px;
   font-family: "Line Awesome Free";
   font-weight: 900;
+}
+
+@media screen and (max-width: 800px) {
+  .link-more {
+    top: -49px;
+    font-size: 1em;
+  }
 }
 
 .tab-wrap .tab-cont .tab-lst {
@@ -502,8 +515,8 @@ legend {
 }
 
 .star-area {
-  width: 126px;
-  height: 22px;
+  width: 115px;
+  height: 20px;
   margin-top: -3px;
   background: url(../../images/comm/bg-star.png) 0 0/auto 100% repeat-x;
 }
@@ -982,7 +995,7 @@ legend {
 .sec-class .lst-class .link-thumb::before {
   content: "";
   position: absolute;
-  bottom: 18px;
+  bottom: 12px;
   right: 14px;
   z-index: 10;
   width: 25px;
@@ -1043,6 +1056,7 @@ legend {
 
 .sec-class .lst-class .link-txt .writer {
   display: block;
+  margin-top: 3px;
   font-size: 0.857em;
   color: #8b8b8b;
 }
@@ -1060,15 +1074,23 @@ legend {
   background: url(../../images/contents/coursefree/speak-play.png) 0 0/contain no-repeat;
 }
 
+.sec-class .lst-class-type2 .link-txt {
+  height: 80px;
+}
+
+.sec-class .lst-class-type2 .link-txt .tit {
+  margin-top: 5px;
+}
+
 @media screen and (max-width: 800px) {
   .sec-class.et-more .link-more {
-    top: -84px;
+    top: -103px;
   }
   .sec-class .area-hash {
     overflow-x: auto;
     width: calc(100% + 40px);
     margin-left: -20px;
-    padding: 8px 0 10px 20px;
+    padding: 3px 0 10px 20px;
   }
   .sec-class .lst-hash {
     -ms-flex-wrap: nowrap;
@@ -1096,7 +1118,8 @@ legend {
   .sec-class .lst-class .link-txt .tit {
     font-size: 1.1em;
   }
-  .sec-class .lst-class .link-txt .txt {
+  .sec-class .lst-class .link-txt .txt,
+  .sec-class .lst-class .link-txt .writer {
     font-size: 1em;
   }
   .sec-class .scroll-verti {
@@ -1146,6 +1169,7 @@ legend {
   }
   .sec-class .scroll-hori {
     overflow-x: auto;
+    overflow-y: visible;
     width: calc(100% + 40px);
     margin-left: -20px;
   }
@@ -1168,6 +1192,11 @@ legend {
   .sec-class .scroll-hori .link-txt {
     height: auto;
     padding: 12px 0;
+  }
+  .sec-class .lst-class-type2 .link-thumb::before {
+    width: 50px;
+    height: 50px;
+    background: url(../../images/contents/coursefree/speak-play.png) 0 0/contain no-repeat;
   }
 }
 
@@ -1368,7 +1397,7 @@ legend {
   .sec-expert .cont-expert .txt .row4 {
     display: block;
     margin: 0 0 2px 0;
-    padding: 3px 5px 0 3px;
+    padding: 2px 5px 0 3px;
     line-height: 1.2;
   }
 }
@@ -1431,7 +1460,7 @@ legend {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 65px;
+  margin-top: 73px;
 }
 
 .sec-onestop .lst-onestop .slide {
@@ -1472,7 +1501,7 @@ legend {
 }
 
 .sec-onestop .lst-onestop p {
-  margin-bottom: 25px;
+  margin-bottom: 17px;
   font-size: 1.571em;
   text-align: center;
   font-family: "S-CoreDream4";
@@ -1553,7 +1582,7 @@ legend {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 100px;
-    font-size: 8vw;
+    font-size: 7.7vw;
   }
   .sec-onestop .tit::before {
     position: absolute;
@@ -1564,12 +1593,13 @@ legend {
     z-index: 10;
     -webkit-transform: translateX(-127%);
             transform: translateX(-127%);
-    width: 32%;
+    width: 31.3%;
     height: 4px;
   }
   .sec-onestop .tit span {
     padding: 0;
     text-align: center;
+    text-indent: -15px;
   }
   .sec-onestop .tit em {
     position: absolute;
@@ -1904,7 +1934,7 @@ legend {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 467px;
+    height: 445px;
     border-radius: 10px;
     -webkit-box-shadow: 20px 20px 36px 0 rgba(0, 0, 0, 0.12);
             box-shadow: 20px 20px 36px 0 rgba(0, 0, 0, 0.12);
@@ -2024,6 +2054,7 @@ legend {
     padding: 70px 10% 25px;
   }
   .sec-curri .cont-curriculum .box-curri .txt {
+    font-size: 1.071em;
     line-height: 1.8em;
   }
 }
@@ -2040,7 +2071,7 @@ legend {
 
 .sec-review .slider-review .swiper-slide {
   position: relative;
-  height: 430px;
+  height: 426px;
   padding: 38px 30px;
   border: 1px solid #eee;
   background-color: #fff;
@@ -2087,7 +2118,7 @@ legend {
 .sec-review .slider-review .txt {
   overflow: hidden;
   height: 146px;
-  margin-top: 17px;
+  margin-top: 12px;
   color: #777;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2098,14 +2129,17 @@ legend {
   -webkit-box-orient: vertical;
   line-height: 1.5em;
   height: 6em;
+  font-size: 0.929em;
+  line-height: 1.769em;
+  height: 7.076em;
 }
 
 .sec-review .slider-review .box-from {
   position: absolute;
-  bottom: 20px;
+  bottom: 22px;
   left: 30px;
   color: #777;
-  font-size: 0.929em;
+  font-size: 0.857em;
   line-height: 1.7;
 }
 
@@ -2136,6 +2170,7 @@ legend {
   .sec-review .slider-review .txt {
     height: 7.2em;
     line-height: 1.8em;
+    font-size: 1.071em;
   }
 }
 
@@ -2160,7 +2195,7 @@ legend {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 .sec-child .lst-child li {
@@ -2218,6 +2253,9 @@ legend {
   .sec-child .lst-child li {
     width: 100%;
     margin-bottom: 50px;
+  }
+  .sec-child .lst-child .txt {
+    font-size: 1.071em;
   }
 }
 

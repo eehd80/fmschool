@@ -2,10 +2,6 @@
     position: relative;
     margin-bottom: 200px;
     padding-left: 75px;
-    // * {
-    //     font-family: "NanumBarunGothic", serif;
-    //     font-weight: 400;
-    // }
     .contents-area {
         > .container {
             padding: 60px 0 100px;
@@ -1740,3 +1736,10 @@
         }
     }
 }
+
+// .main-contents {
+//     background: url(../../m.png) 50% -154px / 100% auto no-repeat;
+//     > * {
+//         opacity: 0.7;
+//     }
+// }

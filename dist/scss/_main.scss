@@ -263,7 +263,7 @@
             &::before {
                 content: "";
                 position: absolute;
-                bottom: 18px;
+                bottom: 12px;
                 right: 14px;
                 z-index: 10;
                 width: 25px;
@@ -314,6 +314,7 @@
             }
             .writer {
                 display: block;
+                margin-top: 3px;
                 font-size: 0.857em;
                 color: #8b8b8b;
             }
@@ -330,20 +331,26 @@
                 background: url(../../images/contents/coursefree/speak-play.png) 0 0 / contain no-repeat;
             }
         }
+        .link-txt {
+            height: 80px;
+            .tit {
+                margin-top: 5px;
+            }
+        }
     }
 }
 @media screen and (max-width: 800px) {
     .sec-class {
         &.et-more {
             .link-more {
-                top: -84px;
+                top: -103px;
             }
         }
         .area-hash {
             overflow-x: auto;
             width: calc(100% + 40px);
             margin-left: -20px;
-            padding: 8px 0 10px 20px;
+            padding: 3px 0 10px 20px;
         }
         .lst-hash {
             flex-wrap: nowrap;
@@ -370,7 +377,8 @@
                 .tit {
                     font-size: 1.1em;
                 }
-                .txt {
+                .txt,
+                .writer {
                     font-size: 1em;
                 }
             }
@@ -410,6 +418,7 @@
 
         .scroll-hori {
             overflow-x: auto;
+            overflow-y: visible;
             width: calc(100% + 40px);
             margin-left: -20px;
             .lst-class {
@@ -427,6 +436,14 @@
             .link-txt {
                 height: auto;
                 padding: 12px 0;
+            }
+        }
+
+        .lst-class-type2 {
+            .link-thumb::before {
+                width: 50px;
+                height: 50px;
+                background: url(../../images/contents/coursefree/speak-play.png) 0 0 / contain no-repeat;
             }
         }
     }
@@ -586,7 +603,7 @@
                 .row4 {
                     display: block;
                     margin: 0 0 2px 0;
-                    padding: 3px 5px 0 3px;
+                    padding: 2px 5px 0 3px;
                     line-height: 1.2;
                 }
             }
@@ -634,7 +651,7 @@
     .lst-onestop {
         display: flex;
         justify-content: space-between;
-        margin-top: 65px;
+        margin-top: 73px;
         .slide {
             animation: ani-onestop 0.5s forwards;
         }
@@ -664,7 +681,7 @@
             }
         }
         p {
-            margin-bottom: 25px;
+            margin-bottom: 17px;
             font-size: 1.571em;
             text-align: center;
             font-family: "S-CoreDream4";
@@ -724,18 +741,19 @@
         .tit {
             flex-direction: column;
             height: 100px;
-            font-size: 8vw;
+            font-size: 7.7vw;
             &::before {
                 @include posX;
                 top: 67px;
                 z-index: 10;
                 transform: translateX(-127%);
-                width: 32%;
+                width: 31.3%;
                 height: 4px;
             }
             span {
                 padding: 0;
                 text-align: center;
+                text-indent: -15px;
             }
             em {
                 @include posX;
@@ -1014,7 +1032,7 @@
                 overflow: hidden;
                 display: flex;
                 flex-direction: column;
-                height: 467px;
+                height: 445px;
                 border-radius: 10px;
                 box-shadow: 20px 20px 36px 0 rgba($b, 0.12);
                 border: solid 3px #0baac2;
@@ -1125,6 +1143,7 @@
                     padding: 70px 10% 25px;
                 }
                 .txt {
+                    font-size: 1.071em;
                     line-height: 1.8em;
                 }
             }
@@ -1140,7 +1159,7 @@
         overflow: visible;
         .swiper-slide {
             position: relative;
-            height: 430px;
+            height: 426px;
             padding: 38px 30px;
             border: 1px solid $lineCont1;
             background-color: $w;
@@ -1187,17 +1206,20 @@
         .txt {
             overflow: hidden;
             height: 146px;
-            margin-top: 17px;
+            margin-top: 12px;
             color: $subFont;
             @include ell4;
+            font-size: 0.929em;
+            line-height: 1.769em;
+            height: 7.076em;
         }
 
         .box-from {
             position: absolute;
-            bottom: 20px;
+            bottom: 22px;
             left: 30px;
             color: $subFont;
-            font-size: 0.929em;
+            font-size: 0.857em;
             line-height: 1.7;
         }
 
@@ -1227,6 +1249,7 @@
             .txt {
                 height: 7.2em;
                 line-height: 1.8em;
+                font-size: 1.071em;
             }
         }
     }
@@ -1246,7 +1269,7 @@
     .lst-child {
         display: flex;
         justify-content: space-between;
-        margin-top: 70px;
+        margin-top: 60px;
         li {
             width: 32%;
             text-align: center;
@@ -1296,6 +1319,9 @@
             li {
                 width: 100%;
                 margin-bottom: 50px;
+            }
+            .txt {
+                font-size: 1.071em;
             }
         }
     }
@@ -1550,10 +1576,3 @@
         }
     }
 }
-
-// .main-contents {
-//     background: url(../../m.png) 50% -44px / 100% auto no-repeat;
-//     > div {
-//         opacity: 0.7;
-//     }
-// }
