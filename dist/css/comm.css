@@ -1217,6 +1217,48 @@ legend {
   .sec-bnr .container {
     width: 100%;
   }
+  .sec-bnr .m-middle-bnr {
+    position: relative;
+    height: 185px;
+    padding: 30px;
+    background-color: #323232;
+  }
+  .sec-bnr .m-middle-bnr::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    height: 80px;
+    background: url(../../images/main/m-mBanner-220117-1@3x.png) 0 0/100% auto no-repeat;
+  }
+  .sec-bnr .m-middle-bnr em {
+    position: relative;
+    z-index: 10;
+    display: block;
+    font-size: 15px;
+    color: #fff;
+  }
+  .sec-bnr .m-middle-bnr strong {
+    position: relative;
+    z-index: 10;
+    display: block;
+    font-family: "oneMobileTitle";
+    font-weight: normal;
+    font-size: 25px;
+    color: #d2af70;
+  }
+  .sec-bnr .m-middle-bnr span {
+    position: relative;
+    z-index: 10;
+    display: block;
+    font-family: "oneMobileTitle";
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 1.3;
+    color: #fff;
+  }
 }
 
 .sec-expert {

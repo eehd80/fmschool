@@ -464,6 +464,48 @@
         .container {
             width: 100%;
         }
+        .m-middle-bnr {
+            position: relative;
+            height: 185px;
+            padding: 30px;
+            background-color: #323232;
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: block;
+                height: 80px;
+                background: url(../../images/main/m-mBanner-220117-1@3x.png) 0 0 / 100% auto no-repeat;
+            }
+            em {
+                position: relative;
+                z-index: 10;
+                display: block;
+                font-size: 15px;
+                color: $w;
+            }
+            strong {
+                position: relative;
+                z-index: 10;
+                display: block;
+                @include ff-onemobile;
+                font-weight: normal;
+                font-size: 25px;
+                color: #d2af70;
+            }
+            span {
+                position: relative;
+                z-index: 10;
+                display: block;
+                @include ff-onemobile;
+                font-weight: normal;
+                font-size: 25px;
+                line-height: 1.3;
+                color: $w;
+            }
+        }
     }
 }
 
