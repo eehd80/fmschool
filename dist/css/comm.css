@@ -500,14 +500,15 @@ legend {
 }
 
 .star-area {
-  width: 110px;
+  width: 126px;
   height: 22px;
-  background: url(../../images/comm/bg-star.svg) 1px 0/auto 100% repeat-x;
+  margin-top: -3px;
+  background: url(../../images/comm/bg-star.png) 0 0/auto 100% repeat-x;
 }
 
 .star-area .star- {
   height: 100%;
-  background: url(../../images/comm/img-star.svg) 1px 0/auto 100% repeat-x;
+  background: url(../../images/comm/img-star.png) 0 0/auto 100% repeat-x;
 }
 
 .star-area.star1 .star- {
@@ -1901,7 +1902,7 @@ legend {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 415px;
+    height: 467px;
     border-radius: 10px;
     -webkit-box-shadow: 20px 20px 36px 0 rgba(0, 0, 0, 0.12);
             box-shadow: 20px 20px 36px 0 rgba(0, 0, 0, 0.12);
@@ -1910,7 +1911,7 @@ legend {
     letter-spacing: -0.12em;
   }
   .sec-curri .cont-curriculum .box-curri .cont {
-    min-height: 275px;
+    min-height: 315px;
     padding: 25px 10% 25px 80px;
   }
   .sec-curri .cont-curriculum .box-curri .num {
@@ -1945,7 +1946,7 @@ legend {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    padding: 20px 30px 10px;
+    padding: 20px 5% 10px;
     border-top: 1px solid #eaeaea;
     background-color: #f9f9fa;
   }
@@ -1957,7 +1958,13 @@ legend {
         flex-wrap: wrap;
   }
   .sec-curri .cont-curriculum .box-curri .lst-foot dt {
-    width: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 45px;
     margin-bottom: 5px;
     text-align: justify;
     white-space: nowrap;
@@ -1965,8 +1972,8 @@ legend {
   }
   .sec-curri .cont-curriculum .box-curri .lst-foot dd {
     position: relative;
-    width: calc(100% - 50px);
-    margin-bottom: 10px;
+    width: calc(100% - 60px);
+    margin: 0 0 10px 5px;
     padding-left: 10px;
     font-weight: 300;
     letter-spacing: -0.1em;
@@ -2004,6 +2011,9 @@ legend {
   }
   .sec-curri .cont-curriculum .box-curri .cont {
     padding: 70px 10% 25px;
+  }
+  .sec-curri .cont-curriculum .box-curri .txt {
+    line-height: 1.8em;
   }
 }
 
