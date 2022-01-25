@@ -1071,6 +1071,7 @@
                         font-weight: 300;
                     }
                     dd {
+                        display: flex;
                         position: relative;
                         width: calc(100% - 60px);
                         margin: 0 0 10px 5px;
@@ -1089,6 +1090,11 @@
                         span {
                             color: $prim1;
                             font-weight: 700;
+                        }
+                        em {
+                            display: inline-block;
+                            margin: 0 1px;
+                            color: #bbb;
                         }
                     }
                 }

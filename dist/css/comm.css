@@ -1971,6 +1971,9 @@ legend {
     font-weight: 300;
   }
   .sec-curri .cont-curriculum .box-curri .lst-foot dd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: relative;
     width: calc(100% - 60px);
     margin: 0 0 10px 5px;
@@ -1990,6 +1993,11 @@ legend {
   .sec-curri .cont-curriculum .box-curri .lst-foot dd span {
     color: #00a9bd;
     font-weight: 700;
+  }
+  .sec-curri .cont-curriculum .box-curri .lst-foot dd em {
+    display: inline-block;
+    margin: 0 1px;
+    color: #bbb;
   }
   .sec-curri .cont-curriculum .link-curri {
     position: static;
