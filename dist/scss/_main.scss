@@ -1077,6 +1077,7 @@
                         padding-left: 10px;
                         font-weight: 300;
                         letter-spacing: -0.1em;
+                        white-space: nowrap;
                         &::before {
                             content: ":";
                             position: absolute;
