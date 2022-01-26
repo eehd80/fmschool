@@ -160,18 +160,18 @@
     .mVisual {
         .swiper-slide {
             .container {
-                height: 425px;
+                height: 430px;
                 padding-top: 25px;
             }
             .scab {
                 display: none;
             }
             .tit {
-                margin-top: 10px;
+                margin-top: 18px;
                 font-size: 1.9em;
             }
             .txt {
-                margin-top: 16px;
+                margin-top: 13px;
                 font-size: 1.071em;
             }
             .slide-img {
@@ -181,7 +181,7 @@
             }
             .btn-area {
                 flex-direction: column;
-                margin-top: 10px;
+                margin-top: 7px;
                 transform: scale(0.8);
                 transform-origin: 0 0;
                 .btn-blue {
@@ -223,6 +223,13 @@
 .sec-class {
     overflow: hidden;
     padding-top: 55px;
+    &.et-more .link-more {
+        top: -34px;
+    }
+    .area-hash {
+        width: 90%;
+        overflow-x: auto;
+    }
     .lst-hash {
         display: flex;
         margin-bottom: 10px;
@@ -263,11 +270,11 @@
             &::before {
                 content: "";
                 position: absolute;
-                bottom: 12px;
-                right: 14px;
+                bottom: 10px;
+                right: 12px;
                 z-index: 10;
-                width: 25px;
-                height: 25px;
+                width: 30px;
+                height: 30px;
                 background: url(../../images/contents/coursefree/event-youtube-play.png) 0 0 / contain no-repeat;
             }
             img {
@@ -341,9 +348,10 @@
 }
 @media screen and (max-width: 800px) {
     .sec-class {
+        padding-top: 40px;
         &.et-more {
             .link-more {
-                top: -103px;
+                top: -99px;
             }
         }
         .area-hash {
@@ -457,7 +465,7 @@
 }
 
 .sec-bnr {
-    margin-top: 20px;
+    margin: 20px 0 15px;
     a {
         display: block;
     }
@@ -521,7 +529,7 @@
     position: relative;
     height: 700px;
     background-color: #252b4d;
-    margin-top: 38px;
+    margin-top: 48px;
     .bg-ani-expert {
         position: absolute;
         top: 10px;
@@ -580,9 +588,11 @@
             margin: 2% 0 0 13.5%;
             color: $prim1-sub;
             font-size: 1.5em;
+            line-height: 1.6;
             .yellow-line {
                 display: flex;
-                margin-bottom: 5px;
+                margin-bottom: 8px;
+                line-height: 1;
             }
             .row1 {
                 display: inline-block;
@@ -653,7 +663,7 @@
                     display: block;
                     margin: 0 0 2px 0;
                     padding: 2px 5px 0 3px;
-                    line-height: 1.2;
+                    line-height: 1.1;
                 }
             }
         }
@@ -886,6 +896,8 @@
 .sec-curri {
     .cont-curriculum {
         position: relative;
+        width: 100%;
+        max-width: 1112px;
         margin: 30px auto 0;
         &::before {
             content: "";
@@ -915,7 +927,7 @@
                 content: "";
                 position: absolute;
                 top: 0;
-                left: 16px;
+                left: 0;
                 z-index: 10;
                 width: 1px;
                 height: 314px;
@@ -938,7 +950,7 @@
         .swiper-pagination {
             position: absolute;
             top: 40px;
-            right: 0;
+            right: -34px;
             display: flex;
             flex-direction: column;
             height: 342px;
@@ -1000,11 +1012,11 @@
         }
         .link-curri {
             display: block;
-            @include posX;
+            position: absolute;
+            left: 222px;
             bottom: 20px;
             z-index: 30;
-            transform: translateX(-59.4%);
-            width: 53.7%;
+            width: 59.9%;
             padding: 15px 0px 11px;
             border-radius: 4px;
             background-color: $prim1;
@@ -1037,7 +1049,7 @@
         //     width: 100%;
         // }
         .cont-curriculum {
-            width: 90%;
+            width: 93.5%;
             margin: 37px auto 0;
             // padding-bottom: 100px;
             &::before,
@@ -1441,6 +1453,7 @@
             font-family: "Poppins", sans-serif;
             font-size: 11px;
             color: #999;
+            letter-spacing: 0;
         }
         .name {
             display: block;
