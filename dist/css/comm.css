@@ -1176,20 +1176,15 @@ legend {
     border: none;
   }
   .sec-class .scroll-verti .link-txt .tit {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    word-wrap: break-word;
-    white-space: normal;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    line-height: 1.3em;
-    height: 2.6em;
+    display: block;
+    overflow: visible;
+    width: 100%;
+    text-overflow: unset;
+    white-space: unset;
   }
   .sec-class .scroll-verti .link-txt .writer {
-    position: absolute;
-    bottom: 0;
-    left: 15px;
+    display: inline-block;
+    margin-top: 10px;
   }
   .sec-class .scroll-hori {
     overflow-x: auto;
@@ -1530,7 +1525,7 @@ legend {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  left: 0;
+  left: 3px;
   right: 0;
   width: 100%;
   height: 3px;
