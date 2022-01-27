@@ -1179,8 +1179,10 @@ legend {
     display: block;
     overflow: visible;
     width: 100%;
+    margin-top: 2px;
     text-overflow: unset;
     white-space: unset;
+    line-height: 1.3em;
   }
   .sec-class .scroll-verti .link-txt .writer {
     display: inline-block;
