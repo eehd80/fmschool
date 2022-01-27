@@ -1812,7 +1812,7 @@ legend {
 .sec-curri .cont-curriculum .swiper-pagination {
   position: absolute;
   top: 40px;
-  right: -34px;
+  right: -13px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1837,7 +1837,7 @@ legend {
   position: relative;
   width: 100%;
   height: auto;
-  padding: 5px 28px 0;
+  padding: 5px 25px 0;
   border-bottom: 1px solid #d7d7d7;
   border-radius: 0;
   text-align: left;
@@ -1890,7 +1890,7 @@ legend {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   left: 0;
-  width: 13px;
+  width: 10px;
   height: 2px;
   background-color: #00a9bd;
 }

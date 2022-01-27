@@ -955,7 +955,7 @@
         .swiper-pagination {
             position: absolute;
             top: 40px;
-            right: -34px;
+            right: -13px;
             display: flex;
             flex-direction: column;
             height: 342px;
@@ -969,7 +969,7 @@
             position: relative;
             width: 100%;
             height: auto;
-            padding: 5px 28px 0;
+            padding: 5px 25px 0;
             border-bottom: 1px solid #d7d7d7;
             border-radius: 0;
             text-align: left;
@@ -1010,7 +1010,7 @@
                 content: "";
                 @include posY;
                 left: 0;
-                width: 13px;
+                width: 10px;
                 height: 2px;
                 background-color: $prim1;
             }
