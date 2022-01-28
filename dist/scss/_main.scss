@@ -936,7 +936,7 @@
                 @include posX;
                 top: 0;
                 z-index: 10;
-                transform: translateX(-576px);
+                transform: translateX(-558px);
                 width: 1px;
                 height: 314px;
                 background: url(../../images/main/mCurri-line.png) 0 0 no-repeat;
@@ -960,7 +960,7 @@
         .swiper-pagination {
             @include posX;
             top: 40px;
-            transform: translateX(420px);
+            transform: translateX(413px);
             display: flex;
             flex-direction: column;
             height: 342px;
@@ -1022,11 +1022,10 @@
         }
         .link-curri {
             display: block;
-            position: absolute;
-            left: 222px;
+            @include posX;
             bottom: 20px;
             z-index: 30;
-            width: 59.9%;
+            width: 665px;
             padding: 15px 0px 11px;
             border-radius: 4px;
             background-color: $prim1;
@@ -1090,6 +1089,7 @@
             .area-pagination {
                 position: absolute;
                 top: 0;
+                left: 0;
                 width: 100%;
             }
             .swiper-pagination {
@@ -1100,6 +1100,7 @@
                 width: 100%;
                 height: auto;
                 border-top: none;
+                transform: none;
             }
             .swiper-pagination-bullet {
                 display: block;

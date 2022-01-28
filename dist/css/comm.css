@@ -1797,8 +1797,8 @@ legend {
           transform: translateX(-50%);
   top: 0;
   z-index: 10;
-  -webkit-transform: translateX(-576px);
-          transform: translateX(-576px);
+  -webkit-transform: translateX(-558px);
+          transform: translateX(-558px);
   width: 1px;
   height: 314px;
   background: url(../../images/main/mCurri-line.png) 0 0 no-repeat;
@@ -1824,8 +1824,8 @@ legend {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   top: 40px;
-  -webkit-transform: translateX(420px);
-          transform: translateX(420px);
+  -webkit-transform: translateX(413px);
+          transform: translateX(413px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1911,10 +1911,12 @@ legend {
 .sec-curri .cont-curriculum .link-curri {
   display: block;
   position: absolute;
-  left: 222px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   bottom: 20px;
   z-index: 30;
-  width: 59.9%;
+  width: 665px;
   padding: 15px 0px 11px;
   border-radius: 4px;
   background-color: #00a9bd;
@@ -1981,6 +1983,7 @@ legend {
   .sec-curri .cont-curriculum .area-pagination {
     position: absolute;
     top: 0;
+    left: 0;
     width: 100%;
   }
   .sec-curri .cont-curriculum .swiper-pagination {
@@ -1998,6 +2001,8 @@ legend {
     width: 100%;
     height: auto;
     border-top: none;
+    -webkit-transform: none;
+            transform: none;
   }
   .sec-curri .cont-curriculum .swiper-pagination-bullet {
     display: block;
