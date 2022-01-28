@@ -899,10 +899,13 @@
 }
 
 .sec-curri {
+    .container {
+        width: 100%;
+        max-width: none;
+    }
     .cont-curriculum {
         position: relative;
         width: 100%;
-        max-width: 1112px;
         margin: 30px auto 0;
         &::before {
             content: "";
@@ -941,7 +944,7 @@
             > .swiper-wrapper {
                 position: relative;
                 flex-direction: column;
-                width: 83%;
+                // width: 83%;
             }
             // img {
             //     width: 100%;
@@ -950,6 +953,8 @@
             // }
         }
         .swiper-slide {
+            max-width: 1112px;
+            margin: auto;
             padding-top: 10px;
         }
         .swiper-pagination {
