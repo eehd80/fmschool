@@ -933,10 +933,10 @@
             height: 492px;
             &::after {
                 content: "";
-                position: absolute;
+                @include posX;
                 top: 0;
-                left: 0;
                 z-index: 10;
+                transform: translateX(-576px);
                 width: 1px;
                 height: 314px;
                 background: url(../../images/main/mCurri-line.png) 0 0 no-repeat;
@@ -958,9 +958,9 @@
             padding-top: 10px;
         }
         .swiper-pagination {
-            position: absolute;
+            @include posX;
             top: 40px;
-            right: -13px;
+            transform: translateX(420px);
             display: flex;
             flex-direction: column;
             height: 342px;

@@ -1792,9 +1792,13 @@ legend {
 .sec-curri .cont-curriculum .slider-curri::after {
   content: "";
   position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   top: 0;
-  left: 0;
   z-index: 10;
+  -webkit-transform: translateX(-576px);
+          transform: translateX(-576px);
   width: 1px;
   height: 314px;
   background: url(../../images/main/mCurri-line.png) 0 0 no-repeat;
@@ -1816,8 +1820,12 @@ legend {
 
 .sec-curri .cont-curriculum .swiper-pagination {
   position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   top: 40px;
-  right: -13px;
+  -webkit-transform: translateX(420px);
+          transform: translateX(420px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
