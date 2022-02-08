@@ -1,0 +1,360 @@
+@media (max-width: 1400px) {
+  /*메인*/
+}
+@media (max-width: 800px) {
+  /*헤더*/
+  .password_hd {
+    display: none;
+  }
+  i.m_logo_s {
+    background: no-repeat url('../img/sprite.svg');
+    background-position: -20px 0px;
+    width: 123px;
+    height: 19px;
+    display: inline-block;
+  }
+  .m_hd.hide {
+    display: none !important;
+  }
+
+  /*푸터*/
+  #m_sub_ft .bottom a i {
+    margin: 0 auto 6px;
+    width: 22px;
+    height: 22px;
+    background: no-repeat url('../img/sprite.svg');
+    display: block;
+  }
+  #m_sub_ft .bottom a i.bottom_01 {
+    background-position: -46px -647px;
+  }
+  #m_sub_ft a.on > i.bottom_01 {
+    background-position: -46px -670px;
+  }
+  #m_sub_ft .bottom a i.bottom_02 {
+    background-position: -23px -647px;
+  }
+  #m_sub_ft a.on > i.bottom_02 {
+    background-position: -23px -670px;
+  }
+  #m_sub_ft .bottom a i.bottom_03 {
+    background-position: -92px -647px;
+  }
+  #m_sub_ft a.on > i.bottom_03 {
+    background-position: -92px -670px;
+  }
+  #m_sub_ft .bottom a i.bottom_04 {
+    background-position: -161px -647px;
+  }
+  #m_sub_ft a.on > i.bottom_04 {
+    background-position: -161px -670px;
+  }
+  #m_sub_ft a.on > span {
+    color: #00b6cb;
+  }
+
+  /*메뉴*/
+  .slide_layer {
+    height: 130px;
+  }
+  .sub_con02 .cate_wrap {
+    display: none;
+  }
+  .m_tap_con .m_tabl_box {
+    padding-top: 10px;
+  }
+  .side_menu {
+    left: -300px;
+    padding-bottom: 20px;
+  }
+  .side_menu > ul.last_ul {
+    padding-top: 0;
+  }
+  .side_menu > ul.last_ul > li:nth-child(2) {
+    padding-bottom: 0;
+  }
+  .side_menu > ul.last_ul > li:nth-child(3) {
+    padding-top: 0;
+    border-bottom: 0;
+  }
+
+  .m_hd .top_con .menu_btn i {
+    background: no-repeat url('../img/sprite.svg');
+    background-position: 0px -590px;
+    width: 22px;
+    height: 18px;
+    display: inline-block;
+  }
+  .m_hd .top_con .menu_btn i.w {
+    height: 19px;
+    background-position: 0px -612px;
+  }
+  .m_hd .top_con .m_prev i {
+    background: no-repeat url('../img/sprite.svg');
+    background-position: -23px -587px;
+    width: 13px;
+    height: 23px;
+    display: inline-block;
+  }
+  .m_hd .top_con .m_prev i.w {
+    background-position: -23px -610px;
+  }
+
+  /*투자스쿨*/
+  .sub05_layer .study_video {
+    padding: 0 20px 50px;
+  }
+  .rank_sub_tab_box {
+    border-bottom: 0;
+  }
+  .rank_sub_tab {
+    padding-top: 0;
+  }
+  .rank_sub_tab li {
+    margin-top: 22px;
+  }
+
+  /*종목스쿨*/
+  .m_scl_layer .in_box:last-child {
+    background-color: transparent;
+  }
+
+  /*결제 약관*/
+  .sub_con04_2.mb_v .answer {
+    overflow: auto !important;
+    height: 200px;
+  }
+  .sub06_layer .list li .pay_wrap > span:last-child {
+    padding-left: 20px;
+  }
+
+  /* 동영상 강좌 설명 */
+  .play_layer .left .sub_content {
+    display: block;
+  }
+  /* 마케팅 정보수신 */
+
+  .sub08_layer .td label span {
+    margin-right: 5px;
+  }
+  .info_tooltip {
+    /* width: 100%; */
+    top: 30px;
+  }
+  .info_toolip .info_close {
+    width: unset;
+  }
+  .sub_con09.mb_v .on textarea.answer {
+    display: block;
+  }
+
+  /*로그인*/
+  .layer.login {
+    height: 100vh;
+  }
+  .login_con.mb_v {
+    background-image: none;
+    padding: 0 0 60px;
+  }
+  .m_login_bottom {
+    margin-top: 35px;
+  }
+  .sns_login_wrap a img {
+    width: auto;
+  }
+  .m_login_bottom a {
+    color: #666;
+  }
+  .m_login_bottom a::after {
+    color: rgba(102, 102, 102, 0.3);
+  }
+  .login_con.mb_v form button {
+    background-color: #00afcb;
+    margin-top: 15px;
+  }
+  .login_logo {
+    margin-top: 66px;
+    margin-bottom: 20px;
+    background: no-repeat url('../img/sprite.svg');
+    background-position: 0px -735px;
+    width: 210px;
+    height: 62px;
+    display: inline-block;
+  }
+  .login_con.mb_v form input {
+    border: 1px solid #e7e7e7;
+    height: auto;
+    line-height: 3rem;
+    padding-left: 16px;
+  }
+  .login_con.mb_v form input:focus {
+    border: 2px solid #00afcb;
+    outline: 0;
+  }
+  .login_con.mb_v form input::placeholder {
+    color: #d1d1d1;
+  }
+  .login_con.mb_v form input.m_user_pass {
+    margin-top: 10px;
+  }
+
+  /*회원가입*/
+  .join_con .email_join {
+    background-color: #00afcb;
+  }
+  .join_con.member_con .banner_box i.logo {
+    background: no-repeat url('../img/sprite.svg');
+    background-position: 0px -734px;
+    width: 208px;
+    height: 33px;
+    display: inline-block;
+  }
+
+  /*메인*/
+  .banner_layer .back_img01,
+  .banner_layer .back_img02,
+  .banner_layer .back_img03 {
+    display: none;
+  }
+  .banner_layer .m_back_img01,
+  .banner_layer .m_back_img02,
+  .banner_layer .m_back_img03 {
+    display: block;
+  }
+  .main_event_popup > .pop_container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .main_event_popup .pop_item {
+    position: absolute;
+    max-width: calc(100vw - 40px);
+  }
+  .main_event_popup .pop_item > img.pc_v {
+    display: none;
+  }
+  .main_event_popup .pop_item > img.mb_v {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .main_event_popup .pop_btn {
+    line-height: 60px;
+    position: relative;
+  }
+  .main_event_popup .pop_btn > button {
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    color: #777;
+    line-height: 60px;
+  }
+  /*이벤트*/
+  .event_wrap .event_cookie {
+    display: none;
+  }
+  /*쿠폰*/
+  .no_bg {
+    min-height: auto;
+  }
+  /*학습내역*/
+  .sub05_layer .study_left li .zero::after {
+    left: 20%;
+  }
+  .sub05_layer .study_left li .zero {
+    left: -5px;
+  }
+  .pop_sub_layer .pop_con .top .close_btn,
+  button.close {
+    background: url('../img/mobile/m_pop_close.svg');
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+  }
+  .sub05_layer .in_top_con > div.left p.num {
+    padding-top: 6px;
+    font-size: 35px;
+  }
+  .sub05_layer .in_top_con > div.left p.num > b {
+    font-size: 45px;
+  }
+  .sub05_layer .mid .top_ul li i {
+    top: 36px;
+    right: 20px;
+  }
+  .sub05_layer .in_top_con > div.right {
+    margin-top: 40px;
+  }
+  .sub05_layer .mid .acctInfo {
+    margin-bottom: 7px;
+  }
+  .sub05_layer .mid .acctInfo > div {
+    height: 60px;
+    padding: 0 20px 0 20px;
+  }
+  .sub05_layer .mid .acctInfo .name {
+    display: flex;
+    align-items: center;
+  }
+
+  /*이용권*/
+  .sud_con04 .product_box .price01 {
+    margin-top: 12px;
+  }
+  .sub_con04_2.mb_v .info_box_custom {
+    background-color: #f0f0f0;
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 500px) {
+  /*메인*/
+  .video_con .img_1 {
+    background-image: url('../img/mobile/M_video_img_1.png');
+    padding-bottom: 62%;
+  }
+  .video_con .img_2 {
+    background-image: url('../img/mobile/M_video_img_2.png');
+    padding-bottom: 62%;
+  }
+  .video_con .img_3 {
+    background-image: url('../img/mobile/M_video_img_3.png');
+    padding-bottom: 62%;
+  }
+  .video_con .img_4 {
+    background-image: url('../img/mobile/M_video_img_4.png');
+    padding-bottom: 62%;
+  }
+  /*리뷰*/
+  .sub_re_con3 {
+    padding: 20px 20px 100px;
+  }
+  .fm_popup {
+    position: fixed;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: unset;
+  }
+}
+
+@media (max-width: 400px) {
+  .fm_popup {
+    position: fixed;
+    width: 290px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: unset;
+  }
+  .info_toolip span {
+    padding-right: unset !important;
+  }
+
+  /*투자스쿨*/
+  .play_box .plyr--video .plyr__controls .plyr__control[data-plyr='play'] {
+    top: -65px;
+    width: 10px;
+    height: 13px;
+    margin-left: -8px;
+  }
+}
