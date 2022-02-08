@@ -27,6 +27,13 @@
         }
     }
 }
+.side_menu {
+    display: block;
+    left: 0;
+    opacity: 0.5;
+    &.shrink {
+    }
+}
 
 #main {
     padding-top: 61px;
@@ -69,6 +76,11 @@
             position: static;
         }
     }
+    .m_hd {
+        .top_con {
+            height: 61px;
+        }
+    }
     #main {
         padding-left: 0;
     }
@@ -79,6 +91,14 @@
                 padding: 40px 0 100px;
             }
         }
+    }
+    .m_top {
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .m_top {
+        padding: 0 20px;
     }
 }
 

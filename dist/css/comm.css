@@ -403,6 +403,12 @@ legend {
   position: static;
 }
 
+.side_menu {
+  display: block;
+  left: 0;
+  opacity: 0.5;
+}
+
 #main {
   padding-top: 61px;
   padding-left: 75px;
@@ -445,6 +451,9 @@ legend {
     display: block;
     position: static;
   }
+  .m_hd .top_con {
+    height: 61px;
+  }
   #main {
     padding-left: 0;
   }
@@ -453,6 +462,15 @@ legend {
   }
   .main-contents .contents-area > .container {
     padding: 40px 0 100px;
+  }
+  .m_top {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .m_top {
+    padding: 0 20px;
   }
 }
 
