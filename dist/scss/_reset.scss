@@ -204,11 +204,17 @@ input[type="password"] {
 
 /* 이미지 스프라이트 */
 
-.img_g {
+.img-g {
     display: inline-block;
     overflow: hidden;
     background: url(../../images/comm/img-comm.png) no-repeat;
-    vertical-align: top;
+    vertical-align: middle;
+}
+.img-g2 {
+    display: inline-block;
+    overflow: hidden;
+    background: url(../../images/comm/sprite.svg) no-repeat;
+    vertical-align: middle;
 }
 
 /* 이미지 */

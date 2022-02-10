@@ -123,7 +123,7 @@
                 transform: translate(-50%, -60%);
                 width: 18px;
                 height: 18px;
-                background: url(../../images/img-comm.png) 0 0 no-repeat;
+                background: url(../../images/comm/img-comm.png) 0 0 no-repeat;
             }
         }
     }
@@ -1716,11 +1716,11 @@
     }
 }
 
-// .main-contents {
-//     background: url(../../pc.png) 40% -3px no-repeat;
-//     > * {
-//         opacity: 0.7;
-//     }
+// body {
+//     background: url(../../pc.png) 100% 60px no-repeat;
+// }
+// header {
+//     opacity: 0.8;
 // }
 
 // .main-contents {

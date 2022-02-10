@@ -1,4 +1,17 @@
 $(function () {
+    // header fixed
+    $(window).scroll(function () {
+        //220207 수정
+        let $headBnr = $("#header .bnr-head"),
+            headBnrHeight = $headBnr.height();
+
+        if ($(this).scrollTop() > headBnrHeight) {
+            $(".typeHeaderBnr").addClass("fixed");
+        } else {
+            $(".typeHeaderBnr").removeClass("fixed");
+        }
+    });
+
     // slideani
     $(window).scroll(function () {
         $(".slideanim").each(function () {
