@@ -12,6 +12,26 @@ $(function () {
         }
     });
 
+    // snb
+    $("#gnb").each(function () {
+        let $this = $(this),
+            $hamBtn = $this.find(".btn-hamburger"),
+            $snbDepth2 = $this.find(".snb-depth2 > li"),
+            $snbDepth2Link = $snbDepth2.find("> a");
+
+        $hamBtn.click(function () {
+            $("#gnb").toggleClass("shrink");
+        });
+
+        $snbDepth2Link.click(function () {
+            if ($(this).parent().hasClass("on") === true) {
+                $(this).parent().removeClass("on");
+            } else {
+                $(this).parent().addClass("on");
+            }
+        });
+    });
+
     // slideani
     $(window).scroll(function () {
         $(".slideanim").each(function () {
