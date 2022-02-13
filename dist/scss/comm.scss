@@ -650,7 +650,6 @@
     padding: 40px 50px 40px 125px;
     .lst-corp {
         display: flex;
-        margin-left: -20px;
         li {
             &:first-child {
                 a::before {
@@ -661,19 +660,18 @@
         a {
             position: relative;
             display: block;
-            height: 30px;
-            padding: 0 20px;
+            padding: 20px 0;
             color: $w;
             font-size: 1.071em;
             &::before {
                 content: "";
-                position: absolute;
-                top: 25px;
-                left: 0;
+                display: inline-block;
                 width: 1px;
                 height: 10px;
+                margin: -2px 20px 0;
                 background-color: $w;
                 opacity: 0.5;
+                vertical-align: middle;
             }
         }
     }
@@ -707,12 +705,15 @@
 }
 @media screen and (max-width: 800px) {
     #footer {
-        padding: 30px;
+        padding: 40px 30px;
         .lst-corp {
             margin-left: -10px;
             a {
-                padding: 10px;
+                // padding: 10px;
                 font-size: 0.929em;
+                &::before {
+                    margin: 0 10px;
+                }
             }
         }
     }

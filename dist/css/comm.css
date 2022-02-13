@@ -1139,7 +1139,6 @@ legend {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -20px;
 }
 
 #footer .lst-corp li:first-child a::before {
@@ -1149,21 +1148,20 @@ legend {
 #footer .lst-corp a {
   position: relative;
   display: block;
-  height: 30px;
-  padding: 0 20px;
+  padding: 20px 0;
   color: #fff;
   font-size: 1.071em;
 }
 
 #footer .lst-corp a::before {
   content: "";
-  position: absolute;
-  top: 25px;
-  left: 0;
+  display: inline-block;
   width: 1px;
   height: 10px;
+  margin: -2px 20px 0;
   background-color: #fff;
   opacity: 0.5;
+  vertical-align: middle;
 }
 
 #footer .address,
@@ -1202,14 +1200,16 @@ legend {
 
 @media screen and (max-width: 800px) {
   #footer {
-    padding: 30px;
+    padding: 40px 30px;
   }
   #footer .lst-corp {
     margin-left: -10px;
   }
   #footer .lst-corp a {
-    padding: 10px;
     font-size: 0.929em;
+  }
+  #footer .lst-corp a::before {
+    margin: 0 10px;
   }
 }
 
