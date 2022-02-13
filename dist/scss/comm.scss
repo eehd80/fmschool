@@ -116,7 +116,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    border-bottom: 1px solid rgb(240, 240, 240);
+    // border-bottom: 1px solid rgb(240, 240, 240);
     background-color: #fff;
     .logo {
         margin-left: 75px;
@@ -203,11 +203,98 @@
         }
     }
 }
+#lnb {
+    .lst-lnb {
+        display: flex;
+        li {
+            &.on a {
+                border-bottom: 3px solid $prim1;
+                color: $prim1;
+                font-weight: bold;
+            }
+        }
+        a {
+            display: block;
+            height: 60px;
+            padding: 0 2vw;
+            line-height: 60px;
+        }
+    }
+}
+.headerSub {
+    .search-head {
+        display: none;
+    }
+}
+@media screen and (max-width: 800px) {
+    .headerSub {
+        .logo-head {
+            justify-content: center;
+            background-color: $prim1;
+            .logo {
+                position: absolute;
+                top: -1000px;
+                overflow: hidden;
+                width: 0;
+                height: 0;
+            }
+            .util {
+                display: none;
+            }
+            #lnb {
+                li {
+                    display: none;
+                    &.on {
+                        display: block;
+                    }
+                    a {
+                        border-bottom: none;
+                        font-size: 1.429em;
+                        font-weight: normal;
+                        color: $w;
+                    }
+                }
+            }
+        }
+        .btn-hamburger {
+            .bar1,
+            .bar2,
+            .bar3 {
+                background-color: $w;
+            }
+        }
+        .search-head {
+            display: block;
+        }
+    }
+    .search-head {
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: auto;
+        .search-area {
+            border: none;
+            background-color: transparent;
+            .input-search {
+                display: none;
+            }
+            .btn-submit {
+                width: 48px;
+                height: 48px;
+                &::before {
+                    background-position: -20px 0;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
 
 // sldeNavbar
 #gnb {
     position: fixed;
-    top: 60px;
+    top: 59px;
     z-index: 1000;
 }
 // 축소
@@ -500,13 +587,60 @@
         }
     }
 }
+@media screen and (max-width: 800px) {
+    #gnb {
+        top: 0;
+        width: 100%;
+        background-color: rgba($b, 0.5);
+        &.shrink {
+            width: 0;
+            .side-navbar {
+                transform: translateX(-75px);
+            }
+            .btn-hamburger {
+                top: 14px;
+                left: 20px;
+                background-color: transparent;
+                .bar1,
+                .bar3 {
+                    background-color: $w !important;
+                }
+            }
+        }
+    }
+    .btn-hamburger {
+        top: 20px;
+        left: 68%;
+        width: 30px;
+        height: 30px;
+        .bar1,
+        .bar3 {
+            background-color: $b !important;
+        }
+    }
+    .side-navbar {
+        width: 80%;
+        padding-top: 60px;
+    }
+    // .side-navbar {
+    //     transform: translateXY(0, -60px);
+    // }
+}
 
 #main {
-    padding-top: 61px;
+    padding-top: 60px;
     padding-left: 75px;
     .scl_layer {
         margin-bottom: 0;
         padding-left: 0;
+    }
+}
+@media screen and (max-width: 800px) {
+    #main {
+        padding-left: 0;
+        .m_top {
+            padding-top: 0;
+        }
     }
 }
 
@@ -527,7 +661,8 @@
         a {
             position: relative;
             display: block;
-            padding: 20px;
+            height: 30px;
+            padding: 0 20px;
             color: $w;
             font-size: 1.071em;
             &::before {
@@ -570,6 +705,18 @@
         }
     }
 }
+@media screen and (max-width: 800px) {
+    #footer {
+        padding: 30px;
+        .lst-corp {
+            margin-left: -10px;
+            a {
+                padding: 10px;
+                font-size: 0.929em;
+            }
+        }
+    }
+}
 
 // ico
 .ico-beta {
@@ -586,13 +733,13 @@
     width: 13px;
     height: 13px;
     margin: -2px 5px 0 0;
-    background-position: -20px 0;
+    background-position: -40px 0;
 }
 .ico-wallet {
     width: 19px;
     height: 13px;
     margin: -1px 5px 0 0;
-    background-position: -40px 0;
+    background-position: -60px 0;
 }
 
 // layout 기존거 수정

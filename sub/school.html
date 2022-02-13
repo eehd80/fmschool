@@ -61,7 +61,7 @@
         <!-- //220101 수정 -->
     </head>
 
-    <body>
+    <body class="headerSub">
         <!-- 220209 -->
         <div id="u-skip">
             <a href="#gnb">주메뉴 바로가기</a>
@@ -72,6 +72,14 @@
                 <h1 class="logo">
                     <a href="#"> FMschool </a>
                 </h1>
+                <nav id="lnb">
+                    <ul class="lst-lnb">
+                        <li class="on"><a href="/stocks/info/kr">국내주식</a></li>
+                        <li><a href="/stocks/rank/kr/top">국내주식 랭킹</a></li>
+                        <li><a href="/stocks/info/us">미국주식</a></li>
+                        <li><a href="/stocks/rank/us/top">미국주식 랭킹</a></li>
+                    </ul>
+                </nav>
                 <div id="search" class="search-head">
                     <form action="">
                         <fieldset>
@@ -100,7 +108,7 @@
                 </div>
             </div>
         </header>
-
+        <!-- gnb shrink 확대 축소 -->
         <nav id="gnb" class="shrink">
             <button class="btn-hamburger" onclick="myFunction(this)">
                 <em class="bar1"></em>
