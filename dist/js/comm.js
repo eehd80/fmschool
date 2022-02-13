@@ -1,15 +1,23 @@
 $(function () {
     // header fixed
-    $(window).scroll(function () {
-        //220207 수정
-        let $headBnr = $("#header .bnr-head"),
-            headBnrHeight = $headBnr.height();
+    //220207 수정
+    $("#header").each(function () {
+        let $window = $(window),
+            $typeHeaderBnr = $(".typeHeaderBnr"),
+            // $headBnr = $("#header .bnr-head"),
+            // headBnrHeight = $headBnr.height(),
+            $header = $("#header .logo-head"),
+            headerOffsetTop = $header.offset().top;
 
-        if ($(this).scrollTop() > headBnrHeight) {
-            $(".typeHeaderBnr").addClass("fixed");
-        } else {
-            $(".typeHeaderBnr").removeClass("fixed");
-        }
+        $window
+            .scroll(function () {
+                if ($(this).scrollTop() > headerOffsetTop) {
+                    $typeHeaderBnr.addClass("fixed");
+                } else {
+                    $typeHeaderBnr.removeClass("fixed");
+                }
+            })
+            .trigger("scroll");
     });
 
     // snb

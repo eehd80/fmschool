@@ -4,7 +4,7 @@
 // 220209
 // layout
 .typeHeaderBnr {
-    #header .logo-head {
+    .logo-head {
         position: absolute;
         top: 60px;
         left: 0;
@@ -14,7 +14,7 @@
         top: 120px;
     }
     &.fixed {
-        #header .logo-head {
+        .logo-head {
             position: fixed;
             top: 0;
         }
@@ -75,6 +75,7 @@
         align-items: center;
         @include posY;
         right: 2%;
+        z-index: 10;
         color: $w;
         .area-cookie {
             display: flex;
@@ -227,46 +228,6 @@
     }
 }
 @media screen and (max-width: 800px) {
-    .headerSub {
-        .logo-head {
-            justify-content: center;
-            background-color: $prim1;
-            .logo {
-                position: absolute;
-                top: -1000px;
-                overflow: hidden;
-                width: 0;
-                height: 0;
-            }
-            .util {
-                display: none;
-            }
-            #lnb {
-                li {
-                    display: none;
-                    &.on {
-                        display: block;
-                    }
-                    a {
-                        border-bottom: none;
-                        font-size: 1.429em;
-                        font-weight: normal;
-                        color: $w;
-                    }
-                }
-            }
-        }
-        .btn-hamburger {
-            .bar1,
-            .bar2,
-            .bar3 {
-                background-color: $w;
-            }
-        }
-        .search-head {
-            display: block;
-        }
-    }
     .search-head {
         display: block;
         position: absolute;
@@ -283,11 +244,120 @@
                 width: 48px;
                 height: 48px;
                 &::before {
-                    background-position: -20px 0;
+                    background-position: 0 0;
                     opacity: 1;
                 }
             }
         }
+    }
+    .bnr-head .bnr-option {
+        display: none;
+    }
+    .logo-head {
+        justify-content: center;
+        padding: 0;
+        .logo {
+            margin: 0;
+        }
+        .util {
+            display: none;
+        }
+    }
+    .headerSub {
+        .logo-head {
+            justify-content: center;
+            background-color: $prim1;
+            .logo {
+                position: absolute;
+                top: -1000px;
+                overflow: hidden;
+                width: 0;
+                height: 0;
+            }
+            #lnb {
+                li {
+                    display: none;
+                    &.on {
+                        display: block;
+                    }
+                    a {
+                        border-bottom: none;
+                        font-size: 1.429em;
+                        font-weight: normal;
+                        color: $w;
+                    }
+                }
+            }
+        }
+        .search-head {
+            display: block;
+            .btn-submit {
+                &::before {
+                    background-position: -20px 0;
+                }
+            }
+        }
+    }
+}
+
+// bottomMenu
+#botMenu {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 0 1%;
+    background-color: $w;
+    border-top: 1px solid rgba($b, 0.05);
+    box-shadow: 5px 0 5px rgba($b, 0.1);
+    .lst-botmenu {
+        display: flex;
+        li {
+            flex-grow: 1;
+        }
+        a {
+            display: block;
+            height: 70px;
+            padding-top: 15px;
+            text-align: center;
+            font-size: 0.786em;
+            color: #777;
+            &::before {
+                content: "";
+                display: block;
+                width: 22px;
+                height: 22px;
+                margin: 0 auto 6px;
+                background: url(../../images/comm/sprite.svg) 0 0 no-repeat;
+            }
+        }
+        .course a::before {
+            background-position: -46px -647px;
+        }
+        .info a::before {
+            background-position: -23px -647px;
+        }
+        .class a::before {
+            background-position: -92px -647px;
+        }
+        .my a::before {
+            background-position: -161px -647px;
+        }
+        .on {
+            a {
+                color: $prim1;
+                &::before {
+                    background-position-y: -670px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    #botMenu {
+        display: block;
     }
 }
 
@@ -601,10 +671,6 @@
                 top: 14px;
                 left: 20px;
                 background-color: transparent;
-                .bar1,
-                .bar3 {
-                    background-color: $w !important;
-                }
             }
         }
     }
@@ -615,16 +681,49 @@
         height: 30px;
         .bar1,
         .bar3 {
-            background-color: $b !important;
+            background-color: $b;
         }
     }
+
     .side-navbar {
         width: 80%;
         padding-top: 60px;
     }
-    // .side-navbar {
-    //     transform: translateXY(0, -60px);
-    // }
+
+    .typeHeaderBnr {
+        &.fixed {
+            #gnb {
+                top: 0;
+                &.shrink .btn-hamburger {
+                    top: 15px;
+                }
+            }
+        }
+        #gnb {
+            top: 0;
+            height: 100vh;
+            &.shrink {
+                .btn-hamburger {
+                    top: 76px;
+                }
+            }
+        }
+        .side-navbar {
+            height: 100vh;
+        }
+    }
+
+    .headerSub {
+        .shrink {
+            .btn-hamburger {
+                .bar1,
+                .bar2,
+                .bar3 {
+                    background-color: $w;
+                }
+            }
+        }
+    }
 }
 
 #main {
@@ -731,8 +830,9 @@
 }
 @media screen and (max-width: 800px) {
     #footer {
-        padding: 30px 20px 220px;
+        padding: 30px 30px 220px;
         .lst-corp {
+            margin-bottom: 10px;
             a {
                 font-size: 0.929em;
                 &::before {
