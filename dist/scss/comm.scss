@@ -227,7 +227,12 @@
         display: none;
     }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1280px) {
+    .bnr-head .bnr-option {
+        display: none;
+    }
+}
+@media screen and (max-width: 1024px) {
     .search-head {
         display: block;
         position: absolute;
@@ -249,9 +254,6 @@
                 }
             }
         }
-    }
-    .bnr-head .bnr-option {
-        display: none;
     }
     .logo-head {
         justify-content: center;
@@ -355,7 +357,7 @@
         }
     }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
     #botMenu {
         display: block;
     }
@@ -365,6 +367,7 @@
 #gnb {
     position: fixed;
     top: 59px;
+    bottom: 0;
     z-index: 1000;
 }
 // 축소
@@ -657,7 +660,7 @@
         }
     }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
     #gnb {
         top: 0;
         width: 100%;
@@ -676,7 +679,7 @@
     }
     .btn-hamburger {
         top: 20px;
-        left: 68%;
+        left: calc(80% - 50px);
         width: 30px;
         height: 30px;
         .bar1,
@@ -687,6 +690,7 @@
 
     .side-navbar {
         width: 80%;
+        height: 100vh;
         padding-top: 60px;
     }
 
@@ -734,7 +738,7 @@
         padding-left: 0;
     }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
     #main {
         padding-left: 0;
         .m_top {
@@ -828,7 +832,7 @@
         }
     }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
     #footer {
         padding: 30px 30px 220px;
         .lst-corp {

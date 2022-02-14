@@ -3862,7 +3862,7 @@ body.active {
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
     .video_layer .swiper-progress-bar {
         width: 220px;
         left: 230px;
