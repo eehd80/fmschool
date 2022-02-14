@@ -668,7 +668,7 @@ legend {
   display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .search-head {
     display: block;
     position: absolute;
@@ -807,7 +807,7 @@ legend {
   background-position-y: -670px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   #botMenu {
     display: block;
   }
@@ -1157,7 +1157,7 @@ legend {
   background-color: #eee;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   #gnb {
     top: 0;
     width: 100%;
@@ -1222,7 +1222,7 @@ legend {
   padding-left: 0;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   #main {
     padding-left: 0;
   }
@@ -1907,10 +1907,34 @@ legend {
   content: "\f104";
 }
 
+@media screen and (max-width: 1200px) {
+  .mVisual .swiper-slide .container {
+    padding-top: 70px;
+    height: 500px;
+  }
+  .mVisual .swiper-slide .slide-txt {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+  }
+  .mVisual .swiper-slide .slide-img {
+    right: -20px;
+    width: 50%;
+    height: 440px;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .mVisual .swiper-slide .container {
     height: 430px;
     padding-top: 25px;
+  }
+  .mVisual .swiper-slide .slide-txt {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
   }
   .mVisual .swiper-slide .scab {
     display: none;
