@@ -927,6 +927,10 @@ legend {
   position: relative;
 }
 
+.side-navbar .child-none a::after {
+  display: none;
+}
+
 .side-navbar a {
   position: relative;
   display: -webkit-box;
@@ -1032,7 +1036,6 @@ legend {
   top: 23px;
   left: 13px;
   clear: both;
-  z-index: -1;
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
@@ -1218,6 +1221,7 @@ legend {
 }
 
 #main {
+  position: relative;
   padding-top: 60px;
   padding-left: 75px;
 }
@@ -1225,6 +1229,52 @@ legend {
 #main .scl_layer {
   margin-bottom: 0;
   padding-left: 0;
+}
+
+.summary-stock {
+  overflow: hidden;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: 0;
+  background-color: #ff0c00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  -webkit-transition: height 0.4s;
+  transition: height 0.4s;
+}
+
+.summary-stock.active {
+  height: 60px;
+}
+
+.summary-stock .name {
+  color: #fff;
+  line-height: 1.1;
+}
+
+.summary-stock .name em {
+  font-size: 1rem;
+}
+
+.summary-stock .name strong {
+  display: block;
+  font-size: 1.143rem;
+}
+
+.summary-stock .price {
+  font-size: 1.571em;
+  color: #fff;
 }
 
 @media screen and (max-width: 1024px) {

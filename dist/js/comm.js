@@ -7,14 +7,17 @@ $(function () {
             // $headBnr = $("#header .bnr-head"),
             // headBnrHeight = $headBnr.height(),
             $header = $("#header .logo-head"),
+            $summaryStock = $('.summary-stock'),
             headerOffsetTop = $header.offset().top;
 
         $window
             .scroll(function () {
                 if ($(this).scrollTop() > headerOffsetTop) {
                     $typeHeaderBnr.addClass("fixed");
+                    $summaryStock.addClass('active');
                 } else {
                     $typeHeaderBnr.removeClass("fixed");
+                    $summaryStock.removeClass('active');
                 }
             })
             .trigger("scroll");
