@@ -7,17 +7,17 @@ $(function () {
             // $headBnr = $("#header .bnr-head"),
             // headBnrHeight = $headBnr.height(),
             $header = $("#header .logo-head"),
-            $summaryStock = $('.summary-stock'),
+            $summaryStock = $(".summary-stock"),
             headerOffsetTop = $header.offset().top;
 
         $window
             .scroll(function () {
                 if ($(this).scrollTop() > headerOffsetTop) {
                     $typeHeaderBnr.addClass("fixed");
-                    $summaryStock.addClass('active');
+                    $summaryStock.addClass("active");
                 } else {
                     $typeHeaderBnr.removeClass("fixed");
-                    $summaryStock.removeClass('active');
+                    $summaryStock.removeClass("active");
                 }
             })
             .trigger("scroll");

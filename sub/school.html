@@ -107,6 +107,16 @@
                     </ul>
                 </div>
             </div>
+
+            <nav id="botMenu">
+                <ul class="lst-botmenu">
+                    <li class="course on"><a href="#">투자스쿨</a></li>
+                    <li class="info"><a href="#">분석자료</a></li>
+                    <li class="class"><a href="#">학습내역</a></li>
+                    <li class="my"><a href="#">내정보</a></li>
+                </ul>
+            </nav>
+
             <!-- gnb shrink 확대 축소 -->
             <nav id="gnb" class="shrink">
                 <button class="btn-hamburger" onclick="myFunction(this)">
@@ -234,19 +244,34 @@
                         </li>
                     </ul>
                 </div>
-            </nav>       
+            </nav>
         </header>
         <!-- 220209 -->
 
         <main id="main">
-
-            <div class="summary-stock">
+            <!-- 상승 : up, 하락 : fall, 보합 : 없음 -->
+            <!-- style 값 삭제해주세요 -->
+            <div class="summary-stock active">
                 <h2 class="name">
                     <em>005380</em>
-                    <strong>현대자동차</strong> 
+                    <strong>현대자동차</strong>
                 </h2>
                 <div class="price">8,320,000</div>
-            </div>     
+            </div>
+            <div class="summary-stock active up" style="top: 120px">
+                <h2 class="name">
+                    <em>005380</em>
+                    <strong>현대자동차</strong>
+                </h2>
+                <div class="price">8,320,000</div>
+            </div>
+            <div class="summary-stock active fall" style="top: 180px">
+                <h2 class="name">
+                    <em>005380</em>
+                    <strong>현대자동차</strong>
+                </h2>
+                <div class="price">8,320,000</div>
+            </div>
 
             <div class="layer scl_layer scl_layer01">
                 <!-- 아로 10/08 아로 수정 -->

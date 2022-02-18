@@ -126,7 +126,7 @@
             align-items: center;
             width: 122px;
             height: 60px;
-            background: url(../../images/comm/logo.png) 0 50% no-repeat;
+            background: url(../../images/comm/logo.png) 0 50% / contain no-repeat;
             text-indent: -9999px;
         }
     }
@@ -168,6 +168,27 @@
         }
     }
 }
+.header-navi {
+    .logo-head {
+        background: #32447f;
+        .logo a {
+            background: url(../../images/comm/logo-w.png) 0 50% / contain no-repeat;
+        }
+        .search-head .search-area .btn-submit::before {
+            background-position: -20px 0;
+        }
+    }
+    #gnb {
+        .btn-hamburger {
+            .bar1,
+            .bar2,
+            .bar3 {
+                background-color: $w;
+            }
+        }
+    }
+}
+
 .search-head {
     width: 35%;
     max-width: 450px;
@@ -312,8 +333,7 @@
     z-index: 1000;
     padding: 0 1%;
     background-color: $w;
-    border-top: 1px solid rgba($b, 0.05);
-    box-shadow: 5px 0 5px rgba($b, 0.1);
+    border-top: 1px solid #eee;
     .lst-botmenu {
         display: flex;
         li {
@@ -321,7 +341,7 @@
         }
         a {
             display: block;
-            height: 70px;
+            height: 69px;
             padding-top: 15px;
             text-align: center;
             font-size: 0.786em;
@@ -420,6 +440,13 @@
     left: 25px;
     z-index: 1200;
     cursor: pointer;
+    &.white {
+        .bar1,
+        .bar2,
+        .bar3 {
+            background-color: $w;
+        }
+    }
     > em {
         display: block;
     }
@@ -751,7 +778,7 @@
     right: 0;
     z-index: 100;
     height: 0;
-    background-color: $prim2;
+    background-color: rgb(215, 215, 215);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -760,8 +787,20 @@
     &.active {
         height: 60px;
     }
+    &.up {
+        background-color: #ef3740;
+        * {
+            color: $w;
+        }
+    }
+    &.fall {
+        background-color: #2e3edd;
+        * {
+            color: $w;
+        }
+    }
     .name {
-        color: $w;
+        // color: $w;
         line-height: 1.1;
         em {
             font-size: 1rem;
@@ -773,12 +812,13 @@
     }
     .price {
         font-size: 1.571em;
-        color: $w;
+        // color: $w;
     }
 }
 @media screen and (max-width: 1024px) {
     #main {
         padding-left: 0;
+        padding-bottom: 70px;
         .m_top {
             padding-top: 0;
         }

@@ -545,7 +545,7 @@ legend {
           align-items: center;
   width: 122px;
   height: 60px;
-  background: url(../../images/comm/logo.png) 0 50% no-repeat;
+  background: url(../../images/comm/logo.png) 0 50%/contain no-repeat;
   text-indent: -9999px;
 }
 
@@ -590,6 +590,24 @@ legend {
   border-radius: 30px;
   background-color: #1d1d1d;
   color: #fff;
+}
+
+.header-navi .logo-head {
+  background: #32447f;
+}
+
+.header-navi .logo-head .logo a {
+  background: url(../../images/comm/logo-w.png) 0 50%/contain no-repeat;
+}
+
+.header-navi .logo-head .search-head .search-area .btn-submit::before {
+  background-position: -20px 0;
+}
+
+.header-navi #gnb .btn-hamburger .bar1,
+.header-navi #gnb .btn-hamburger .bar2,
+.header-navi #gnb .btn-hamburger .bar3 {
+  background-color: #fff;
 }
 
 .search-head {
@@ -751,9 +769,7 @@ legend {
   z-index: 1000;
   padding: 0 1%;
   background-color: #fff;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
-  -webkit-box-shadow: 5px 0 5px rgba(0, 0, 0, 0.1);
-          box-shadow: 5px 0 5px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #eee;
 }
 
 #botMenu .lst-botmenu {
@@ -770,7 +786,7 @@ legend {
 
 #botMenu .lst-botmenu a {
   display: block;
-  height: 70px;
+  height: 69px;
   padding-top: 15px;
   text-align: center;
   font-size: 0.786em;
@@ -877,6 +893,12 @@ legend {
   left: 25px;
   z-index: 1200;
   cursor: pointer;
+}
+
+.btn-hamburger.white .bar1,
+.btn-hamburger.white .bar2,
+.btn-hamburger.white .bar3 {
+  background-color: #fff;
 }
 
 .btn-hamburger > em {
@@ -1239,7 +1261,7 @@ legend {
   right: 0;
   z-index: 100;
   height: 0;
-  background-color: #ff0c00;
+  background-color: #d7d7d7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1258,8 +1280,23 @@ legend {
   height: 60px;
 }
 
-.summary-stock .name {
+.summary-stock.up {
+  background-color: #ef3740;
+}
+
+.summary-stock.up * {
   color: #fff;
+}
+
+.summary-stock.fall {
+  background-color: #2e3edd;
+}
+
+.summary-stock.fall * {
+  color: #fff;
+}
+
+.summary-stock .name {
   line-height: 1.1;
 }
 
@@ -1274,12 +1311,12 @@ legend {
 
 .summary-stock .price {
   font-size: 1.571em;
-  color: #fff;
 }
 
 @media screen and (max-width: 1024px) {
   #main {
     padding-left: 0;
+    padding-bottom: 70px;
   }
   #main .m_top {
     padding-top: 0;
