@@ -60,16 +60,19 @@
 
 // lineawesome
 @mixin lineaw {
+    display: inline-block;
     font-family: "Line Awesome Free";
     font-weight: 900;
 }
 @mixin lineaw-arr-next {
     content: "\f105";
+    display: inline-block;
     font-family: "Line Awesome Free";
     font-weight: 900;
 }
 @mixin lineaw-arr-prev {
     content: "\f104";
+    display: inline-block;
     font-family: "Line Awesome Free";
     font-weight: 900;
 }

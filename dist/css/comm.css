@@ -383,6 +383,34 @@ legend {
   font-weight: 800;
 }
 
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("../fonts/NanumSquareRoundOTFR.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("../fonts/NanumSquareRoundOTFL.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("../fonts/NanumSquareRoundOTFB.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("../fonts/NanumSquareRoundOTFEB.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
 .typeHeaderBnr .logo-head {
   position: absolute;
   top: 60px;
@@ -435,6 +463,7 @@ legend {
 }
 
 .bnr-head .slide-headbnr .swiper-button::before {
+  display: inline-block;
   font-family: "Line Awesome Free";
   font-weight: 900;
   color: #fff;
@@ -560,6 +589,7 @@ legend {
 
 .logo-head .link-prev::before {
   content: "\f104";
+  display: inline-block;
   font-family: "Line Awesome Free";
   font-weight: 900;
   font-size: 2em;
@@ -1166,6 +1196,7 @@ legend {
 
 .side-navbar .snb-depth2.et > li > a::after {
   content: "\f107";
+  display: inline-block;
   font-family: "Line Awesome Free";
   font-weight: 900;
   position: absolute;
@@ -1882,6 +1913,322 @@ legend {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+.wrap-celebrity {
+  overflow: hidden;
+}
+
+.wrap-celebrity .circle-scroll {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 180px;
+  height: 180px;
+  background: url(../../images/contents/celebrity/circle-scroll.png) 0 0 no-repeat;
+  text-indent: -9999px;
+}
+
+.celebrity-lst-wrap {
+  position: static;
+  overflow: visible;
+  width: 57%;
+  margin: 0;
+  padding: 80px 0;
+}
+
+.celebrity-lst-wrap .swiper-slide a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+  height: 560px;
+  border-radius: 20px;
+  border: solid 1px rgba(0, 175, 197, 0.2);
+  background-color: #fff;
+}
+
+.celebrity-lst-wrap .swiper-slide .area-txt {
+  padding: 51px 8%;
+}
+
+.celebrity-lst-wrap .swiper-slide .cate {
+  display: block;
+  font-size: 21px;
+  color: #00afc5;
+}
+
+.celebrity-lst-wrap .swiper-slide .sluggan {
+  display: block;
+  margin-top: 5px;
+  font-size: 25px;
+}
+
+.celebrity-lst-wrap .swiper-slide .name {
+  display: block;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.celebrity-lst-wrap .swiper-slide .txt {
+  display: block;
+  width: 58%;
+  margin-top: 18px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #787878;
+}
+
+.celebrity-lst-wrap .swiper-slide .area-career {
+  height: 193px;
+  padding: 26px 8%;
+  background-color: #00afc5;
+}
+
+.celebrity-lst-wrap .swiper-slide .tit-career {
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.celebrity-lst-wrap .swiper-slide .lst-career {
+  margin-top: 5px;
+}
+
+.celebrity-lst-wrap .swiper-slide .lst-career li {
+  font-size: 13px;
+  color: #fff;
+}
+
+.celebrity-lst-wrap .swiper-slide .lst-career li::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 1px;
+  margin: -3px 7px 0 0;
+  background-color: #fff;
+  vertical-align: middle;
+}
+
+.celebrity-lst-wrap .swiper-slide .lst-career li .chinese {
+  font-family: "mGothic";
+}
+
+.celebrity-lst-wrap .swiper-slide .lst-career li .indent {
+  display: block;
+  text-indent: 68px;
+}
+
+.celebrity-lst-wrap .swiper-slide .thumb {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.celebrity-lst-wrap .swiper-slide .thumb img {
+  display: block;
+}
+
+.celebrity-lst-wrap .swiper-slide .link-view {
+  position: absolute;
+  bottom: 22px;
+  right: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-family: "NanumSquareRound", sans-serif;
+  font-weight: 400;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.celebrity-lst-wrap .swiper-slide .link-view::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 16px;
+  margin-top: 6px;
+  background: url(../../images/contents/celebrity/ico-arrow-b-ani.png) 0 50%/contain no-repeat;
+}
+
+.celebrity-lst-wrap .swiper-pagination {
+  bottom: 0;
+  width: calc(100% - 140px);
+  height: 1px;
+  background-color: #d8d8d8;
+}
+
+.celebrity-lst-wrap .swiper-pagination .swiper-pagination-progressbar-fill {
+  height: 3px;
+  margin-top: -1px;
+  background-color: #00b6cb;
+}
+
+.celebrity-lst-wrap .swiper-button-next,
+.celebrity-lst-wrap .swiper-button-prev {
+  position: absolute;
+  top: auto;
+  bottom: -23px;
+  left: auto;
+  right: 0;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50%;
+  border: solid 1px #e2e2e2;
+  background-color: #fff;
+}
+
+.celebrity-lst-wrap .swiper-button-next::before,
+.celebrity-lst-wrap .swiper-button-prev::before {
+  content: "\f061";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  font-size: 20px;
+  color: #2f2f2f;
+}
+
+.celebrity-lst-wrap .swiper-button-next::after,
+.celebrity-lst-wrap .swiper-button-prev::after {
+  display: none;
+}
+
+.celebrity-lst-wrap .swiper-button-prev {
+  right: 54px;
+}
+
+.celebrity-lst-wrap .swiper-button-prev::before {
+  content: "\f060";
+}
+
+.main-cont100 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-cont100 .wrap-celebrity {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+@media screen and (max-width: 1280px) {
+  .celebrity-lst-wrap {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .celebrity-lst-wrap .lst-celebrity {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .celebrity-lst-wrap .swiper-slide {
+    margin-bottom: 20px;
+  }
+  .celebrity-lst-wrap .swiper-slide a {
+    height: auto;
+    border-radius: 10px;
+  }
+  .celebrity-lst-wrap .swiper-slide .area-txt {
+    overflow: hidden;
+    position: relative;
+    min-height: 242px;
+    padding: 25px 25px 22px;
+  }
+  .celebrity-lst-wrap .swiper-slide .cate {
+    font-size: 14px;
+  }
+  .celebrity-lst-wrap .swiper-slide .sluggan {
+    font-size: 18px;
+  }
+  .celebrity-lst-wrap .swiper-slide .name {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .celebrity-lst-wrap .swiper-slide .txt {
+    width: 60%;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  .celebrity-lst-wrap .swiper-slide .thumb {
+    width: 30%;
+    max-height: 90%;
+  }
+  .celebrity-lst-wrap .swiper-slide .thumb img {
+    width: 100%;
+  }
+  .celebrity-lst-wrap .swiper-slide .area-career {
+    height: auto;
+    padding: 18px 8% 23px;
+  }
+  .celebrity-lst-wrap .swiper-slide .tit-career {
+    font-size: 15px;
+  }
+  .celebrity-lst-wrap .swiper-slide .lst-career {
+    font-size: 14px;
+  }
+  .celebrity-lst-wrap .swiper-slide .link-view {
+    display: none;
+  }
+  .celebrity-lst-wrap .swiper-pagination,
+  .celebrity-lst-wrap .swiper-button-prev,
+  .celebrity-lst-wrap .swiper-button-next {
+    display: none;
+  }
+  .celebrity-lst-wrap .circle-scroll {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .celebrity-lst-wrap .swiper-slide .thumb {
+    width: 47%;
+  }
 }
 
 .mVisual .swiper-slide {
@@ -2867,24 +3214,6 @@ legend {
 
 .sec-onestop .swiper-pagination {
   display: none;
-}
-
-@-webkit-keyframes ani-onestop {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes ani-onestop {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @media screen and (max-width: 1280px) {

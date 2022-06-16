@@ -817,14 +817,14 @@
         display: none;
     }
 }
-@keyframes ani-onestop {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
+// @keyframes ani-onestop {
+//     0% {
+//         opacity: 0;
+//     }
+//     100% {
+//         opacity: 1;
+//     }
+// }
 @media screen and (max-width: 1280px) {
     .sec-onestop {
         .lst-onestop li::before {
