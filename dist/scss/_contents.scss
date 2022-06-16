@@ -1716,17 +1716,433 @@
     }
 }
 
-// body {
-//     background: url(../../pc.jpeg) 0 0 no-repeat;
-// }
-// header,
-// main {
-//     opacity: 0.7;
-// }
+// 220526 강의소개 수정
+.plusup-onestop .lst-onestop li {
+    opacity: 1 !important;
+}
+.sec-instructor {
+    height: 1155px;
+    padding: 110px 0;
+    background: url(../../images/contents/curriculum/sec2-bg1.png) 50% 0 / cover no-repeat;
+    text-align: center;
+    .sec-tit {
+        text-align: center;
+        h2 {
+            font-size: 44px;
+            font-weight: 300;
+            color: #000;
+        }
+        p {
+            width: calc(100% - 40px);
+            margin: 12px auto 0;
+            font-size: 16px;
+            font-weight: 300;
+            color: #777;
+        }
+    }
+    .bg-inst-m {
+        display: none;
+    }
+    .sec-cont {
+        margin-top: 55px;
+        img {
+            display: block;
+            width: 90%;
+            max-width: 1238px;
+            margin: 0 auto;
+        }
+    }
+    .link-detail {
+        display: inline-block;
+        max-width: 450px;
+        width: 100%;
+        height: 62px;
+        margin-top: 60px;
+        border-radius: 62px;
+        border: solid 2px #0baac2;
+        background-color: #0baac2;
+        text-align: center;
+        line-height: 62px;
+        font-size: 22px;
+        @include ff-onemobile;
+        color: $w;
+        font-style: italic;
+        span {
+            color: #fff773;
+        }
+        &::after {
+            content: "";
+            display: inline-block;
+            margin-left: 5px;
+            @include lineaw-arr-next;
+            opacity: 0.5;
+            line-height: 1;
+            font-style: normal;
+        }
+    }
+}
+@media (max-width: 1300px) {
+    .sec-instructor {
+        height: auto;
+    }
+}
+@media (max-width: 800px) {
+    .sec-instructor {
+        margin-top: -20px;
+        padding: 0;
+        .bg-inst-m {
+            display: block;
+            width: 100%;
+        }
+        img.bg-inst-pc {
+            display: none;
+        }
+    }
+}
+@media (max-width: 680px) {
+    .sec-instructor {
+        padding: 80px 0;
+    }
+}
+@media (max-width: 600px) {
+    .sec-instructor {
+        position: relative;
+        padding: 0;
+        .m {
+            display: block;
+            width: 100%;
+        }
+        .sec-tit {
+            position: absolute;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            h2 {
+                font-size: 6vw;
+                font-weight: 400;
+            }
+            p {
+                margin-top: 20px;
+                line-height: 1.5;
+            }
+        }
+        .sec-cont {
+            margin-top: 0;
+            img {
+                width: 100%;
+            }
+        }
+        .link-detail {
+            position: absolute;
+            bottom: 65px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 70px);
+            margin-top: 0;
+        }
+    }
+}
 
-// .main-contents {
-//     background: url(../../m.png) 50% -55px / 100% auto no-repeat;
-//     > * {
-//         opacity: 0.7;
-//     }
-// }
+.slideanim {
+    visibility: hidden;
+}
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+// 220615 셀럽소개 수정
+.wrap-celebrity {
+    overflow: hidden;
+    .circle-scroll {
+        @include posXY;
+        z-index: 10;
+        width: 180px;
+        height: 180px;
+        background: url(../../images/contents/celebrity/circle-scroll.png) 0 0 no-repeat;
+        text-indent: -9999px;
+    }
+}
+.celebrity-lst-wrap {
+    position: static;
+    overflow: visible;
+    width: 57%;
+    margin: 0;
+    padding: 80px 0;
+    .swiper-slide {
+        a {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+            height: 560px;
+            border-radius: 20px;
+            border: solid 1px rgba(0, 175, 197, 0.2);
+            background-color: #fff;
+        }
+        .area-txt {
+            padding: 51px 8%;
+        }
+        .cate {
+            display: block;
+            font-size: 21px;
+            color: #00afc5;
+        }
+        .sluggan {
+            display: block;
+            margin-top: 5px;
+            font-size: 25px;
+        }
+        .name {
+            display: block;
+            font-size: 40px;
+            font-weight: normal;
+            line-height: 1.2;
+        }
+        .txt {
+            display: block;
+            width: 58%;
+            margin-top: 18px;
+            font-size: 16px;
+            font-weight: 300;
+            color: #787878;
+        }
+        .area-career {
+            height: 193px;
+            padding: 26px 8%;
+            background-color: #00afc5;
+        }
+        .tit-career {
+            font-size: 17px;
+            font-weight: 400;
+            color: $w;
+        }
+        .lst-career {
+            margin-top: 5px;
+            li {
+                margin-bottom: 1px;
+                font-size: 13px;
+                color: $w;
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 5px;
+                    height: 1px;
+                    margin: -3px 7px 0 0;
+                    background-color: $w;
+                    vertical-align: middle;
+                }
+                .chinese {
+                    @include ff-g;
+                }
+                .indent {
+                    display: block;
+                    text-indent: 68px;
+                }
+            }
+        }
+        .thumb {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            img {
+                display: block;
+            }
+        }
+        .link-view {
+            position: absolute;
+            bottom: 22px;
+            right: 22px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background-color: $w;
+            text-align: center;
+            font-size: 16px;
+            @include ff-nanumR;
+            font-weight: 700;
+            line-height: 1.25;
+            &::after {
+                content: "";
+                display: block;
+                width: 30px;
+                height: 16px;
+                margin-top: 6px;
+                background: url(../../images/contents/celebrity/ico-arrow-b-ani.png) 0 50% / contain no-repeat;
+            }
+        }
+    }
+    .swiper-pagination {
+        bottom: 0;
+        // max-width: 1100px;
+        width: calc(100% - 140px);
+        height: 1px;
+        background-color: #d8d8d8;
+        .swiper-pagination-progressbar-fill {
+            height: 3px;
+            margin-top: -1px;
+            background-color: $prim1;
+        }
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: absolute;
+        top: auto;
+        bottom: -23px;
+        left: auto;
+        right: 0;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px !important;
+        height: 50px !important;
+        border-radius: 50%;
+        border: solid 1px #e2e2e2;
+        background-color: $w;
+        &::before {
+            content: "\f061";
+            font-family: "Line Awesome Free";
+            font-weight: 900;
+            font-size: 20px;
+            color: #2f2f2f;
+        }
+        &::after {
+            display: none;
+        }
+    }
+    .swiper-button-prev {
+        right: 54px;
+        &::before {
+            content: "\f060";
+        }
+    }
+}
+.main-cont100 {
+    display: flex;
+    flex-direction: column;
+    .wrap-celebrity {
+        flex-grow: 1;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .celebrity-lst-wrap {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .wrap-celebrity {
+        .circle-scroll {
+            display: none;
+        }
+    }
+    .celebrity-lst-wrap {
+        .lst-celebrity {
+            flex-direction: column;
+        }
+        .swiper-slide {
+            margin-bottom: 20px;
+            a {
+                height: auto;
+                border-radius: 10px;
+            }
+            .area-txt {
+                overflow: hidden;
+                position: relative;
+                min-height: 242px;
+                padding: 22px 25px 22px;
+            }
+            .cate {
+                font-size: 14px;
+            }
+            .sluggan {
+                margin-top: 3px;
+                font-size: 18px;
+            }
+            .name {
+                font-size: 25px;
+                font-weight: 700;
+            }
+            .txt {
+                width: 56%;
+                margin-top: 15px;
+                font-size: 13px;
+            }
+            .thumb {
+                width: 30%;
+                max-height: 90%;
+                img {
+                    width: 100%;
+                }
+            }
+            .area-career {
+                height: auto;
+                min-width: 103px;
+                padding: 17px 25px 20px;
+            }
+            .tit-career {
+                font-size: 15px;
+            }
+            .lst-career {
+                margin-top: 2px;
+                font-size: 14px;
+            }
+            .link-view {
+                display: none;
+            }
+        }
+        .swiper-pagination,
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .celebrity-lst-wrap .swiper-slide .thumb {
+        width: 43%;
+        &.thumb-2 {
+            width: 40%;
+        }
+        &.thumb-3,
+        &.thumb-13 {
+            width: 46%;
+        }
+        &.thumb-4,
+        &.thumb-5 {
+            width: 45%;
+        }
+        &.thumb-8,
+        &.thumb-10 {
+            width: 38%;
+        }
+        &.thumb-9 {
+            width: 36%;
+        }
+        &.thumb-11 {
+            width: 47%;
+        }
+        &.thumb-13 {
+            width: 42%;
+        }
+    }
+}
