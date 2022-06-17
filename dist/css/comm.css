@@ -6165,6 +6165,7 @@ legend {
   overflow: visible;
   width: 57%;
   margin: 0;
+  margin-bottom: 100px;
   padding: 80px 0;
 }
 
@@ -6226,7 +6227,7 @@ legend {
 }
 
 .celebrity-lst-wrap .swiper-slide .tit-career {
-  font-size: 17px;
+  font-size: 13px;
   font-weight: 400;
   color: #fff;
 }
@@ -6237,7 +6238,7 @@ legend {
 
 .celebrity-lst-wrap .swiper-slide .lst-career li {
   margin-bottom: 1px;
-  font-size: 13px;
+  font-size: 16px;
   color: #fff;
 }
 
@@ -6440,10 +6441,7 @@ legend {
     min-width: 103px;
     padding: 17px 25px 20px;
   }
-  .celebrity-lst-wrap .swiper-slide .tit-career {
-    font-size: 15px;
-  }
-  .celebrity-lst-wrap .swiper-slide .lst-career {
+  .celebrity-lst-wrap .swiper-slide .lst-career li {
     margin-top: 2px;
     font-size: 14px;
   }
