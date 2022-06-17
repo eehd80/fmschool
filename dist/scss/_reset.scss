@@ -140,7 +140,18 @@ button {
     font-weight: 400;
     line-height: 1.5;
     color: #000;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.02em;
+}
+@media screen and (max-width: 800px) {
+    body,
+    th,
+    td,
+    input,
+    select,
+    textarea,
+    button {
+        letter-spacing: -0.05em;
+    }
 }
 
 /* color값은 디자인가이드에 맞게사용 */

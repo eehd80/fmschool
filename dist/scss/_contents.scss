@@ -1923,9 +1923,12 @@
             color: #787878;
         }
         .area-career {
-            height: 193px;
+            height: 178px;
             padding: 26px 8%;
             background-color: #00afc5;
+            &.career-9 {
+                height: 215px;
+            }
         }
         .tit-career {
             font-size: 13px;
@@ -1935,7 +1938,6 @@
         .lst-career {
             margin-top: 5px;
             li {
-                margin-bottom: 1px;
                 font-size: 16px;
                 color: $w;
                 &::before {
@@ -1952,7 +1954,7 @@
                 }
                 .indent {
                     display: block;
-                    text-indent: 68px;
+                    text-indent: 86px;
                 }
             }
         }

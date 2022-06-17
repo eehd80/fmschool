@@ -125,7 +125,19 @@ button {
   font-weight: 400;
   line-height: 1.5;
   color: #000;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.02em;
+}
+
+@media screen and (max-width: 800px) {
+  body,
+  th,
+  td,
+  input,
+  select,
+  textarea,
+  button {
+    letter-spacing: -0.05em;
+  }
 }
 
 /* color값은 디자인가이드에 맞게사용 */
@@ -6220,9 +6232,13 @@ legend {
 }
 
 .celebrity-lst-wrap .swiper-slide .area-career {
-  height: 193px;
+  height: 178px;
   padding: 26px 8%;
   background-color: #00afc5;
+}
+
+.celebrity-lst-wrap .swiper-slide .area-career.career-9 {
+  height: 215px;
 }
 
 .celebrity-lst-wrap .swiper-slide .tit-career {
@@ -6236,7 +6252,6 @@ legend {
 }
 
 .celebrity-lst-wrap .swiper-slide .lst-career li {
-  margin-bottom: 1px;
   font-size: 16px;
   color: #fff;
 }
@@ -6257,7 +6272,7 @@ legend {
 
 .celebrity-lst-wrap .swiper-slide .lst-career li .indent {
   display: block;
-  text-indent: 68px;
+  text-indent: 86px;
 }
 
 .celebrity-lst-wrap .swiper-slide .thumb {
